@@ -12,6 +12,7 @@ import os
 import shutil
 import sys
 import tarfile
+import time
 import zipfile
 from pathlib import Path
 
@@ -35,6 +36,40 @@ def _file_hash_and_size(data: bytes) -> tuple[str, int]:
     return hash_str, len(data)
 
 
+def _generate_metadata() -> bytes:
+    readme_text = (ROOT_DIR / "README.md").read_text(encoding="utf-8")
+    metadata_lines = [
+        "Metadata-Version: 2.1",
+        f"Name: {PKG_NAME}",
+        f"Version: {VERSION}",
+        "Summary: The definitive AI/ML testing, evaluation, guardrail, and reliability library. Built from scratch.",
+        "Author: Shivam",
+        "Project-URL: Homepage, https://github.com/leaderrr-shivam/veriflux",
+        "Project-URL: Repository, https://github.com/leaderrr-shivam/veriflux",
+        "Project-URL: Issues, https://github.com/leaderrr-shivam/veriflux/issues",
+        "License: Apache-2.0",
+        "Requires-Python: >=3.10",
+        "Classifier: Development Status :: 4 - Beta",
+        "Classifier: Intended Audience :: Developers",
+        "Classifier: Intended Audience :: Science/Research",
+        "Classifier: License :: OSI Approved :: Apache Software License",
+        "Classifier: Operating System :: OS Independent",
+        "Classifier: Programming Language :: Python :: 3",
+        "Classifier: Programming Language :: Python :: 3.10",
+        "Classifier: Programming Language :: Python :: 3.11",
+        "Classifier: Programming Language :: Python :: 3.12",
+        "Classifier: Programming Language :: Python :: 3.13",
+        "Classifier: Programming Language :: Python :: 3.14",
+        "Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Classifier: Topic :: Software Development :: Testing",
+        "Classifier: Framework :: Pytest",
+        "Description-Content-Type: text/markdown",
+        "",
+        readme_text,
+    ]
+    return "\n".join(metadata_lines).encode("utf-8")
+
+
 def build_wheel() -> Path:
     """Build pure Python universal wheel."""
     DIST_DIR.mkdir(parents=True, exist_ok=True)
@@ -52,20 +87,17 @@ def build_wheel() -> Path:
                 if file.endswith((".pyc", ".pyo")):
                     continue
                 file_path = Path(root) / file
-                rel_to_src = file_path.relative_to(ROOT_DIR / "src")
-                archive_name = str(rel_to_src).replace("\\", "/")
-
-                with open(file_path, "rb") as f:
-                    data = f.read()
-
-                zf.writestr(archive_name, data)
+                rel_path = file_path.relative_to(ROOT_DIR / "src")
+                archive_name = rel_path.as_posix()
+                zf.write(file_path, archive_name)
+                data = file_path.read_bytes()
                 h, s = _file_hash_and_size(data)
                 records.append(f"{archive_name},{h},{s}")
 
-        # 2. Add WHEEL file
+        # 2. Add WHEEL metadata
         wheel_content = (
             "Wheel-Version: 1.0\n"
-            "Generator: veriflux_dist_builder (1.0)\n"
+            "Generator: veriflux-builder (0.1.0)\n"
             "Root-Is-Purelib: true\n"
             "Tag: py3-none-any\n"
         ).encode("utf-8")
@@ -75,37 +107,7 @@ def build_wheel() -> Path:
         records.append(f"{wheel_meta_name},{h},{s}")
 
         # 3. Add METADATA file
-        readme_text = (ROOT_DIR / "README.md").read_text(encoding="utf-8")
-        metadata_lines = [
-            "Metadata-Version: 2.1",
-            f"Name: {PKG_NAME}",
-            f"Version: {VERSION}",
-            "Summary: The definitive AI/ML testing, evaluation, guardrail, and reliability library. Built from scratch.",
-            "Author: Shivam",
-            "Project-URL: Homepage, https://github.com/leaderrr-shivam/veriflux",
-            "Project-URL: Repository, https://github.com/leaderrr-shivam/veriflux",
-            "Project-URL: Issues, https://github.com/leaderrr-shivam/veriflux/issues",
-            "License: Apache-2.0",
-            "Requires-Python: >=3.10",
-            "Classifier: Development Status :: 4 - Beta",
-            "Classifier: Intended Audience :: Developers",
-            "Classifier: Intended Audience :: Science/Research",
-            "Classifier: License :: OSI Approved :: Apache Software License",
-            "Classifier: Operating System :: OS Independent",
-            "Classifier: Programming Language :: Python :: 3",
-            "Classifier: Programming Language :: Python :: 3.10",
-            "Classifier: Programming Language :: Python :: 3.11",
-            "Classifier: Programming Language :: Python :: 3.12",
-            "Classifier: Programming Language :: Python :: 3.13",
-            "Classifier: Programming Language :: Python :: 3.14",
-            "Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence",
-            "Classifier: Topic :: Software Development :: Testing",
-            "Classifier: Framework :: Pytest",
-            "Description-Content-Type: text/markdown",
-            "",
-            readme_text,
-        ]
-        metadata_content = "\n".join(metadata_lines).encode("utf-8")
+        metadata_content = _generate_metadata()
         meta_name = f"{dist_info_dir}/METADATA"
         zf.writestr(meta_name, metadata_content)
         h, s = _file_hash_and_size(metadata_content)
@@ -147,11 +149,20 @@ def build_sdist() -> Path:
     ]
 
     with tarfile.open(sdist_path, "w:gz") as tar:
+        # 1. Add standard files
         for archive_rel, file_path in files_to_include:
             if file_path.exists():
                 tar.add(str(file_path), arcname=f"{base_dir}/{archive_rel}")
 
-        # Add src/
+        # 2. Add PKG-INFO (Required by PEP 517 / PEP 643 for PyPI sdist validation)
+        pkg_info_content = _generate_metadata()
+        ti = tarfile.TarInfo(f"{base_dir}/PKG-INFO")
+        ti.size = len(pkg_info_content)
+        ti.mtime = int(time.time())
+        ti.type = tarfile.REGTYPE
+        tar.addfile(ti, io.BytesIO(pkg_info_content))
+
+        # 3. Add src/
         for root, _, files in os.walk(ROOT_DIR / "src"):
             for file in files:
                 if file.endswith((".pyc", ".pyo")):
@@ -169,4 +180,3 @@ if __name__ == "__main__":
     whl = build_wheel()
     sdist = build_sdist()
     print("Distribution builds complete. Ready for PyPI and GitHub Releases.")
-
