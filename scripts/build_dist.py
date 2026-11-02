@@ -82,7 +82,6 @@ def build_wheel() -> Path:
             f"Version: {VERSION}",
             "Summary: The definitive AI/ML testing, evaluation, guardrail, and reliability library. Built from scratch.",
             "Author: Shivam",
-            "Author-email: shivam@veriflux.dev",
             "Project-URL: Homepage, https://github.com/leaderrr-shivam/veriflux",
             "Project-URL: Repository, https://github.com/leaderrr-shivam/veriflux",
             "Project-URL: Issues, https://github.com/leaderrr-shivam/veriflux/issues",

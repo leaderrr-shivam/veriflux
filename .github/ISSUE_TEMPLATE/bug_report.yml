@@ -4,7 +4,10 @@ labels: ["bug"]
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to report an issue with Veriflux!
+      value: |
+        Thanks for taking the time to report an issue with Veriflux!
+
+        ⚠️ **Security Notice:** If you have discovered a potential security vulnerability, prompt injection bypass, or safety flaw, **please do NOT submit a public issue here**. Instead, report it privately via [GitHub Private Vulnerability Reporting](https://github.com/leaderrr-shivam/veriflux/security/advisories/new) so that only repository maintainers can review it safely.
   - type: input
     id: version
     attributes:
@@ -43,3 +46,4 @@ body:
       description: What did you expect to happen instead?
     validations:
       required: true
+

@@ -273,12 +273,12 @@ To ensure community trust and scientific rigor, Veriflux was evaluated against r
 | **HaluEval Groundedness F1 (NeurIPS 2023)** | **100.0%** (100 samples) | 78 – 84% (Ragas) | **+16 – 22% F1 Gain** |
 | **HaluEval Evaluation Latency** | **0.65 ms / eval** | 2,500 ms (LLM-as-Judge) | **>3,800x Faster** |
 | **HaluEval Evaluation API Cost** | **$0.00 (Self-Hosted)** | $3.50 – $4.50 / 1k calls | **$0 Token Spend** |
-| **JailbreakBench / HarmBench Catch** | **100.0%** (100 attacks) | 82 – 89% (Guardrails AI) | **Zero Jailbreak Bypass** |
-| **Benign False Alarm Rate (FPR)** | **0.0%** (Safe controls) | 6 – 14% (Guardrails AI) | **Zero False Positives** |
+| **JailbreakBench / HarmBench Catch** | **100.0%** (100 attacks) | 82 – 89% (Guardrails AI) | **100% Catch on Suite** |
+| **Benign False Alarm Rate (FPR)** | **0.0%** (Safe controls) | 6 – 14% (Guardrails AI) | **0.0% FPR on Suite** |
 | **Guardrail Screening Throughput** | **14,763 checks/sec** | ~800 checks/sec (Presidio) | **18x Higher Throughput** |
 | **BEIR / MS-MARCO Hit@10 Recall** | **100.0%** (50 tech queries) | 91.0% (Rank-BM25) | **Full Recall Coverage** |
 | **BEIR Retrieval Speed (QPS)** | **3,273 QPS** | ~450 QPS (Standard Python) | **7.2x Faster Retrieval** |
-| **Production JSON Repair Rate** | **100.0%** (100 malformed) | 88 – 92% (jsonrepair) | **Zero Data Drop** |
+| **Production JSON Repair Rate** | **100.0%** (100 malformed) | 88 – 92% (jsonrepair) | **100% Recovery on Suite** |
 | **Production JSON Repair Speed** | **19,920 repairs/sec** | ~2,400 repairs/sec (Node/Py) | **8.3x Higher Throughput** |
 | **Frontier Multi-Hop Fact Resolution** | **100.0%** (60 complex cases)| Unaddressed (N/A) | **Cross-Doc Propositional** |
 | **Agent Swarm Deadlock Detection** | **100.0%** (50 swarm traces) | Unaddressed (N/A) | **Automated Cycle Guard** |
@@ -361,11 +361,30 @@ Unlike Ragas and DeepEval, which rely on expensive, non-deterministic "LLM-as-a-
 ### How does Veriflux repair truncated or broken LLM JSON?
 Veriflux includes a streaming recursive-descent JSON repair engine (`veriflux.repair_json()`) that fixes truncated arrays, unclosed braces, single quotes, unquoted keys/URLs, comments, and Python literals (`True`, `False`, `None`) in linear time. It achieves a verified **100.0% pass rate (429/429)** on Jos de Jong's official `jsonrepair` upstream test suite at over 50,000 repairs/second.
 
-### Can Veriflux run in air-gapped or secure environments?
-Yes. Veriflux has **zero external runtime dependencies** (no PyTorch, no HuggingFace, no network socket requirements for core evaluation). It runs entirely in-memory within secure, air-gapped, HIPAA, GDPR, and defense-grade environments with an idle footprint of just 6.25 MB.
+### Can Veriflux run in air-gapped or private environments?
+Yes. Veriflux has **zero external runtime dependencies** (no PyTorch, no HuggingFace, and zero mandatory network calls for core evaluation). All evaluation, scoring, and guardrail heuristics execute locally and in-process with an idle footprint of approximately 6.25 MB. Because core evaluation never transmits data over external network sockets or third-party telemetry services, Veriflux is designed for private, air-gapped, or local development workflows.
 
 ### How does Veriflux prevent prompt injections and jailbreaks?
-Veriflux implements a multi-tier heuristic detection engine (`veriflux.PromptInjectionGuard`) analyzing instruction overrides, persona hijacking (e.g. DAN, custom GPTs), compliance forcing, and system token spoofing (`[CLS]`, `$system`, `<<SYS>>`). On the landmark ACM CCS 2024 dataset of 1,405 in-the-wild jailbreak prompts, it intercepts over 71.7% of attacks with a verified **0.0% false positive rate** on benign queries.
+Veriflux implements a multi-tier heuristic detection engine (`veriflux.PromptInjectionGuard`) analyzing instruction overrides, persona hijacking (e.g. DAN, custom GPTs), compliance forcing, and system token spoofing (`[CLS]`, `$system`, `<<SYS>>`). On the landmark ACM CCS 2024 dataset of 1,405 in-the-wild jailbreak prompts, it intercepts over 71.7% of attacks with a verified **0.0% false positive rate** on benign benchmark queries.
+
+---
+
+## 🔒 Security & Confidential Bug Reporting
+
+If you believe you have discovered a security issue, vulnerability, or bypass, **do not file a public GitHub issue**. Instead, submit a private, encrypted advisory via [GitHub Private Vulnerability Reporting](https://github.com/leaderrr-shivam/veriflux/security/advisories/new). Only repository maintainers can access private reports. See [SECURITY.md](SECURITY.md) for full details.
+
+---
+
+## ⚖️ Legal Disclaimer & Limitation of Liability
+
+> [!IMPORTANT]
+> **Please read this disclaimer carefully before using, downloading, integrating, or contributing to Veriflux.**
+
+1. **"AS IS" Research & Developer Utility:** Veriflux is open-source software provided on an **"AS IS"** and **"AS AVAILABLE"** basis, without warranties, representations, or conditions of any kind, whether express, implied, statutory, or otherwise, including without limitation any warranties of merchantability, fitness for a particular purpose, title, non-infringement, system integration, or non-interference.
+2. **No Regulatory, Compliance, or Statutory Certification:** Veriflux is an algorithmic, heuristic, and statistical testing framework intended solely for developer evaluation and research experimentation. It has **not** been certified, accredited, or audited by any governmental agency, standards body, or industry authority. Veriflux does **not** provide, certify, or guarantee compliance with any statutory standard or privacy framework (including, but not limited to, HIPAA, GDPR, CCPA, COPPA, SOC 2, ISO/IEC 27001, PCI-DSS, or defense/military procurement specifications). Users and deploying organizations bear sole and exclusive responsibility for conducting independent verification, security reviews, and ensuring compliance with all applicable laws and regulations.
+3. **No Guarantee of Absolute Security or Flawless Guardrails:** While Veriflux implements defense-in-depth heuristic filters and pattern recognizers, no automated tool can detect, intercept, or prevent 100% of hallucinations, adversarial attacks, prompt injections, jailbreaks, data leakage, or malicious model outputs. Adversarial techniques and large language model behaviors change continuously. Veriflux must **not** be deployed as a sole security boundary or in safety-critical, life-critical, medical, financial, or mission-critical production environments where failure could result in injury, death, or severe harm.
+4. **Limitation of Liability:** To the fullest extent permitted by applicable law, in no event and under no legal theory (whether in contract, tort including negligence, product liability, strict liability, indemnity, or otherwise) shall the author(s), creator(s), copyright holder(s), maintainer(s), or contributor(s) be liable to any user, entity, or third party for any direct, indirect, special, incidental, punitive, exemplary, or consequential damages (including, but not limited to, loss of data, loss of goodwill, lost profits, business interruption, system downtime, computer failure, regulatory fines, or third-party claims) arising out of or related to the use of, inability to use, or reliance upon this software, its heuristics, or benchmark results.
+5. **Third-Party Model Outputs & External Code:** Veriflux analyzes text inputs and outputs generated by third-party systems and large language models. The author(s) and maintainer(s) assume no responsibility, liability, or endorsement for any content, advice, decisions, errors, hallucinations, or damages resulting from models, APIs, datasets, or external systems evaluated using Veriflux.
 
 ---
 
@@ -389,5 +408,5 @@ If you use Veriflux in your academic research, enterprise evaluations, or open-s
 
 ## 📜 License
 
-Veriflux is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
+Veriflux is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for complete terms and conditions.
 

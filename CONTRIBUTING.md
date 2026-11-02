@@ -1,7 +1,7 @@
 # Contributing to Veriflux
 
 Thank you for your interest in contributing to **Veriflux**!  
-We are building a legacy-grade, zero-dependency foundation for AI/ML reliability, evaluation, and guardrails.
+We are building a clean, zero-dependency foundation for AI/ML reliability, evaluation, and guardrails.
 
 ---
 
@@ -29,7 +29,7 @@ We are building a legacy-grade, zero-dependency foundation for AI/ML reliability
 ### 1. Clone & Set Up
 
 ```bash
-git clone https://github.com/veriflux/veriflux.git
+git clone https://github.com/leaderrr-shivam/veriflux.git
 cd veriflux
 python -m venv .venv
 source .venv/bin/activate  # Or .venv\Scripts\activate on Windows
@@ -52,10 +52,15 @@ mypy src/
 
 ---
 
+## 🔒 Reporting Security Vulnerabilities
+
+Please **do not** file public issues for security vulnerabilities. Instead, submit a private report via [GitHub Private Vulnerability Reporting](https://github.com/leaderrr-shivam/veriflux/security/advisories/new). See [SECURITY.md](SECURITY.md) for details.
+
+---
+
 ## 📝 Pull Request Guidelines
 
-- Ensure all 47+ unit tests pass without errors.
+- Ensure all 53+ unit and integration tests pass without errors (`python tests/run_all.py`).
 - Include unit tests for every newly introduced function or class.
 - Update `CHANGELOG.md` with your additions or bug fixes.
 - Keep pull requests focused on a single engine or architectural subsystem.
-

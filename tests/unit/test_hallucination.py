@@ -39,7 +39,7 @@ def test_consistency_checker() -> None:
 
 def test_url_validator() -> None:
     validator = URLValidator()
-    real_style = "Learn more at https://github.com/veriflux/veriflux or https://python.org"
+    real_style = "Learn more at https://github.com/leaderrr-shivam/veriflux or https://python.org"
     fake_style = "Read the paper at https://arxiv.org/abs/9999.9999999 or doi:10.99999/fabricated.paper.2099"
 
     suspicious = validator.find_suspicious_urls(fake_style)

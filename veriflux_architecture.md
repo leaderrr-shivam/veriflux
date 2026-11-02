@@ -346,7 +346,7 @@ The crown jewel. A multi-stage pipeline:
 
 ### ENGINE 4: Context Engineering Engine
 - **Multi-Strategy Compression**: Extractive (sentence importance scoring), compressive (remove filler/redundancy), and abstractive (key information extraction) — all without LLM calls.
-- **Token Budget Manager**: Allocates token budgets across system prompt, chat history, RAG context, and tool results with configurable priorities and minimum guarantees.
+- **Token Budget Manager**: Allocates token budgets across system prompt, chat history, RAG context, and tool results with configurable priorities and minimum token reservations.
 - **Relevance Ranker**: BM25 + TF-IDF + recency decay + source priority scoring for intelligent context assembly.
 
 ### ENGINE 5: Agent Trajectory Analyzer

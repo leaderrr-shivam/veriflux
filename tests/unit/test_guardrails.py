@@ -14,7 +14,7 @@ from veriflux.guardrails import (
 
 def test_pii_detection_and_redaction() -> None:
     guard = PIIGuard()
-    text = "Please reach out to support@veriflux.dev or call (555) 234-5678 regarding SSN 000-12-3456."
+    text = "Please reach out to support@example.com or call (555) 234-5678 regarding SSN 000-12-3456."
     matches = guard.detect(text)
     assert len(matches) >= 3
 
@@ -24,7 +24,7 @@ def test_pii_detection_and_redaction() -> None:
     assert "SSN" in types
 
     redacted = guard.redact(text, mode="mask")
-    assert "support@veriflux.dev" not in redacted
+    assert "support@example.com" not in redacted
     assert "[EMAIL]" in redacted
     assert "[SSN]" in redacted
 
