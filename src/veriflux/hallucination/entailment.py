@@ -249,9 +249,10 @@ def _numerical_consistency(premise: str, hypothesis: str) -> float:
             if h_val == p_val:
                 found_exact = True
                 break
-            # Check if close (within 1% for large numbers)
-            if p_val != 0 and abs(h_val - p_val) / abs(p_val) < 0.01:
-                found_close = True
+            # Epsilon close match ONLY for true fractional floats (e.g. 3.1415 vs 3.14), NEVER for integers or calendar years!
+            if not h_val.is_integer() and not p_val.is_integer():
+                if p_val != 0 and abs(h_val - p_val) / abs(p_val) < 0.001:
+                    found_close = True
 
         if found_exact:
             matches += 1
@@ -261,6 +262,8 @@ def _numerical_consistency(premise: str, hypothesis: str) -> float:
             # Number in hypothesis not in premise — check context overlap
             h_ctx_tokens = set(_content_tokens(h_ctx))
             best_ctx_overlap = 0.0
+            is_both_years = (1800 <= h_val <= 2100) and any(1800 <= p_val <= 2100 for p_val, _ in p_nums)
+
             for p_val, p_ctx in p_nums:
                 p_ctx_tokens = set(_content_tokens(p_ctx))
                 if h_ctx_tokens and p_ctx_tokens:
@@ -269,8 +272,8 @@ def _numerical_consistency(premise: str, hypothesis: str) -> float:
                     )
                     best_ctx_overlap = max(best_ctx_overlap, ovlp)
 
-            if best_ctx_overlap > 0.3:
-                # Same context but different numbers — likely contradiction
+            if best_ctx_overlap > 0.2 or is_both_years:
+                # Same context or conflicting calendar years — direct numerical contradiction
                 contradictions += 1
             else:
                 # Different context — could be additional info

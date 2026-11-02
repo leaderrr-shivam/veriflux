@@ -57,6 +57,31 @@ class GroundednessChecker:
         if not context or not context.strip():
             return GroundednessResult(score=0.0, coverage=0.0, precision=0.0, density=0.0)
 
+        # Short answer / entity response containment check
+        resp_clean = response.strip()
+        ctx_lower = context.lower()
+        resp_lower = resp_clean.lower()
+
+        if len(resp_clean.split()) <= 6:
+            import re
+            resp_words = [w for w in re.findall(r"\w+", resp_lower) if w not in {"the", "a", "an", "in", "on", "at", "to", "of", "and"}]
+            if resp_lower in ctx_lower or (resp_words and all(w in ctx_lower for w in resp_words)):
+                return GroundednessResult(
+                    score=1.0,
+                    coverage=1.0,
+                    precision=1.0,
+                    density=1.0,
+                    grounded_claims=[ClaimVerdict(claim=Claim(text=resp_clean), verdict=Verdict.SUPPORTED, confidence=1.0, evidence=context[:200])],
+                )
+            elif resp_words and any(w not in ctx_lower for w in resp_words):
+                return GroundednessResult(
+                    score=0.0,
+                    coverage=0.0,
+                    precision=0.0,
+                    density=0.0,
+                    ungrounded_claims=[ClaimVerdict(claim=Claim(text=resp_clean), verdict=Verdict.CONTRADICTED, confidence=1.0, evidence="")],
+                )
+
         # 1. Extract claims from response
         claims = self.claim_extractor.extract(response)
         if not claims:

@@ -107,15 +107,22 @@ class ClaimVerifier:
             "for", "with", "to", "of", "and", "or", "as", "is", "was", "are",
             "were", "be", "been", "being", "have", "has", "had", "do", "does",
             "did", "well", "both", "each", "some", "many", "more", "most", "other",
-            "such", "only", "own", "same", "so", "than", "too", "very",
+            "such", "only", "own", "same", "so", "than", "too", "very", "all",
         }
+        first_m = re.search(r"^\s*([A-Z][A-Za-z0-9_-]*)\b", claim_text)
+        first_w = first_m.group(1).lower() if first_m else ""
         claim_entities = [
             w.lower() for w in re.findall(r"\b[A-Z][A-Za-z0-9_-]*\b", claim_text)
             if w.lower() not in common_discourse and len(w) >= 3
         ]
         ctx_lower = context.lower()
         missing_entities = [w for w in claim_entities if w not in ctx_lower]
-        has_entity_hallucination = len(missing_entities) > 0 and (len(missing_entities) / max(1, len(claim_entities))) >= 0.3
+        mid_sentence_missing = [w for w in missing_entities if w != first_w]
+        has_entity_hallucination = (
+            len(mid_sentence_missing) > 0
+            or len(missing_entities) >= 2
+            or (len(missing_entities) == 1 and missing_entities[0] != first_w)
+        )
 
         if ent_res.label == "CONTRADICTION" or not num_ok or has_entity_hallucination:
             verdict = Verdict.CONTRADICTED
