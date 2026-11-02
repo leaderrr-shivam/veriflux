@@ -102,3 +102,4 @@ if __name__ == "__main__":
     print(f" Repair Throughput       : {rep['throughput_repairs_per_sec']:,} repairs/sec")
     print(f" Mean Latency            : {rep['mean_latency_us']} us")
     print("=" * 65)
+

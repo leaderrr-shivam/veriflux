@@ -98,3 +98,4 @@ if __name__ == "__main__":
     print(f" Mean Latency            : {rep['mean_latency_us']} us")
     print(f" Inference Cost          : ${rep['cost_usd']:.2f} (Zero-Token Local Execution)")
     print("=" * 65)
+

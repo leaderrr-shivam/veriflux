@@ -36,9 +36,9 @@ class ClaimExtractor:
 
     # Filter out conversational pleasantries and questions
     _NON_FACTUAL_PATTERNS = [
-        re.compile(r"^(?:hello|hi|hey|greetings|thank you|thanks|how can i help|sure|certainly|you're welcome)", re.IGNORECASE),
+        re.compile(r"^(?:hello|hi|hey|greetings|thank\s+you|thanks|how\s+can\s+i\s+help|sure|certainly|you're\s+welcome)\b", re.IGNORECASE),
         re.compile(r"\?\s*$"),
-        re.compile(r"^(?:let me know|feel free|hope this helps)", re.IGNORECASE),
+        re.compile(r"^(?:let\s+me\s+know|feel\s+free|hope\s+this\s+helps)\b", re.IGNORECASE),
     ]
 
     def __init__(self, min_claim_words: int = 3) -> None:

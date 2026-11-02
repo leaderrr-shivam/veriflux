@@ -286,10 +286,13 @@ In addition to standardized industry suites, Veriflux is systematically evaluate
 
 | Real-World Dataset & Benchmark | Task & Scale | Veriflux Result | Competitor Standard | Real-World Advantage |
 | :--- | :--- | :---: | :---: | :---: |
-| **NeurIPS 2023 HaluEval QA** (`RUCAIBox/HaluEval`) | 200 real raw QA pairs | **82.0% Acc / 79.31% F1** | 81.2% (Ragas / GPT-4) | **2,300x faster (0.34ms)**, $0.00 cost |
-| **jsonrepair Upstream Tests** (`josdejong/jsonrepair`) | 429 official TS tests | **100.0% (429/429)** | 100% (jsonrepair JS) | **33,400 repairs/s**, pure stdlib Python |
+| **NeurIPS 2023 HaluEval QA** (`RUCAIBox/HaluEval`) | 200 real raw QA pairs | **81.5% Acc / 78.61% F1** | 81.2% (Ragas / GPT-4) | **2,300x faster (0.34ms)**, $0.00 cost |
+| **jsonrepair Upstream Tests** (`josdejong/jsonrepair`) | 429 official TS tests | **100.0% (429/429)** | 100% (jsonrepair JS) | **50,300 repairs/s**, pure stdlib Python |
 | **ACM CCS 2024 Jailbreaks** (`verazuo/jailbreak_llms`) | 1,405 in-the-wild prompts | **71.74% Catch (0% FPR)** | 68.5% (Guardrails AI) | **350x faster (5.4ms)**, zero false alarms |
-| **Oxford / OpenAI TruthfulQA** (`sylinrl/TruthfulQA`) | 600 statements evaluated | **82.0% Acc / 84.75% F1** | 78.4% (DeepEval) | **1,800x faster (0.29ms)**, $0.00 cost |
+| **Oxford / OpenAI TruthfulQA** (`sylinrl/TruthfulQA`) | 600 statements evaluated | **81.4% Acc / 84.26% F1** | 78.4% (DeepEval) | **1,800x faster (0.29ms)**, $0.00 cost |
+| **Microsoft Presidio PII** (`microsoft/presidio-research`) | 500 multi-lingual samples | **76.08% F1 (76.21% Rec)** | 71.4% (Presidio NLP) | **70x faster (118us)**, zero Torch/spaCy |
+| **NeurIPS 2023 HaluEval Summarization** (`RUCAIBox`) | 100 long-form doc summaries | **56.0% Acc / 60.0% F1** | 56.2% (Ragas) | **150x faster (15.1ms)**, $0.00 cost |
+| **NeurIPS 2023 HaluEval Dialogue** (`RUCAIBox`) | 200 conversational turns | **62.0% Acc / 53.09% F1** | 58.1% (DeepEval) | **3,000x faster (0.4ms)**, $0.00 cost |
 
 ### 3. Core Micro-Benchmark & Profiling
 

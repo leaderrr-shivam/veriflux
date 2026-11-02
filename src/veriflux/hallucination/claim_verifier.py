@@ -5,6 +5,7 @@ evaluating textual entailment, and computing confidence verdicts.
 """
 from __future__ import annotations
 
+import re
 from typing import List, Optional, Sequence, Union
 
 from veriflux._types import Claim, ClaimVerdict, Verdict
@@ -44,7 +45,8 @@ class ClaimVerifier:
                 evidence="",
             )
 
-        context_sentences = self.sentence_splitter.split(context)
+        norm_context = re.sub(r"([)a-z])([A-Z])", r"\1. \2", context)
+        context_sentences = self.sentence_splitter.split(norm_context)
         if not context_sentences:
             return ClaimVerdict(
                 claim=claim_obj,
@@ -53,7 +55,18 @@ class ClaimVerifier:
                 evidence="",
             )
 
-        # 1. Rank context sentences by relevance to the claim using TF-IDF
+        # 1. Check overall content word coverage against the full context
+        stopwords = {"a", "an", "the", "and", "or", "is", "was", "were", "be", "in", "on", "at", "by", "for", "with", "to", "of", "it", "its"}
+        claim_content_words = [w for w in re.findall(r"\w+", claim_text.lower()) if w not in stopwords and len(w) > 1]
+        ctx_content_words = set(re.findall(r"\w+", norm_context.lower()))
+        raw_coverage = sum(1 for w in claim_content_words if w in ctx_content_words) / max(1, len(claim_content_words))
+
+        claim_stems = [self.stemmer.stem(w) for w in claim_content_words]
+        ctx_stems = set(self.stemmer.stem(w) for w in ctx_content_words)
+        stemmed_coverage = sum(1 for w in claim_stems if w in ctx_stems) / max(1, len(claim_stems))
+        coverage_ratio = max(raw_coverage, stemmed_coverage)
+
+        # 2. Rank context sentences by relevance to the claim using TF-IDF
         vectorizer = TfidfVectorizer()
         docs = [claim_text] + context_sentences
         vectors = vectorizer.fit_transform(docs)
@@ -70,30 +83,17 @@ class ClaimVerifier:
                 best_sentence = context_sentences[idx].strip()
                 best_idx = idx
 
-        # If similarity to all sentences is too low, the claim is unmentioned
-        if best_sim < 0.15:
+        # If similarity to all sentences is too low AND coverage is negligible, the claim is unmentioned
+        if best_sim < 0.15 and coverage_ratio < 0.35:
             return ClaimVerdict(
                 claim=claim_obj,
                 verdict=Verdict.UNVERIFIABLE,
-                confidence=round(1.0 - best_sim, 3),
+                confidence=round(1.0 - max(best_sim, coverage_ratio), 3),
                 evidence=best_sentence,
             )
 
-        # 2. Check entailment between best matching sentence and the claim
+        # 3. Check entailment between best matching sentence and the claim
         ent_res = self.entailment_checker.check(premise=best_sentence, hypothesis=claim_text)
-
-        # 3. Check overall content word coverage against the full context
-        stopwords = {"a", "an", "the", "and", "or", "is", "was", "were", "be", "in", "on", "at", "by", "for", "with", "to", "of", "it", "its"}
-        import re
-        claim_content_words = [w for w in re.findall(r"\w+", claim_text.lower()) if w not in stopwords and len(w) > 1]
-        ctx_content_words = set(re.findall(r"\w+", context.lower()))
-        raw_coverage = sum(1 for w in claim_content_words if w in ctx_content_words) / max(1, len(claim_content_words))
-
-        claim_stems = [self.stemmer.stem(w) for w in claim_content_words]
-        ctx_stems = set(self.stemmer.stem(w) for w in ctx_content_words)
-        stemmed_coverage = sum(1 for w in claim_stems if w in ctx_stems) / max(1, len(claim_stems))
-        coverage_ratio = max(raw_coverage, stemmed_coverage)
-
         num_ok = ent_res.features.get("numerical_consistency", 1.0) >= 0.5
 
         # 4. Check for unmentioned named entities or proper nouns in the claim

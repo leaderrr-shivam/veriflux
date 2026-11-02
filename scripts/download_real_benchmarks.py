@@ -75,6 +75,18 @@ def main() -> int:
     jsonrepair_url = "https://raw.githubusercontent.com/josdejong/jsonrepair/main/src/index.test.ts"
     download_file(jsonrepair_url, DEST_DIR / "jsonrepair_upstream_tests.ts")
 
+    # 5. Microsoft Presidio Official PII Benchmark Dataset (1,500 real-world annotated samples)
+    presidio_url = "https://raw.githubusercontent.com/microsoft/presidio-research/master/data/synth_dataset_v2.json"
+    download_file(presidio_url, DEST_DIR / "presidio_synth_pii_1500.json")
+
+    # 6. Official HaluEval Dialogue Data (RUCAIBox/HaluEval NeurIPS 2023)
+    halueval_dial_url = "https://raw.githubusercontent.com/RUCAIBox/HaluEval/main/data/dialogue_data.json"
+    download_file(halueval_dial_url, DEST_DIR / "halueval_real_dialogue_500.jsonl", max_lines=500)
+
+    # 7. Official HaluEval Summarization Data (RUCAIBox/HaluEval NeurIPS 2023)
+    halueval_sum_url = "https://raw.githubusercontent.com/RUCAIBox/HaluEval/main/data/summarization_data.json"
+    download_file(halueval_sum_url, DEST_DIR / "halueval_real_summarization_500.jsonl", max_lines=500)
+
     print("\nDataset downloads complete. Output folder:", DEST_DIR)
     return 0
 

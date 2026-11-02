@@ -43,16 +43,42 @@ class PIIGuard:
 
     _PATTERNS: Dict[str, Tuple[re.Pattern[str], float]] = {
         "EMAIL": (re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b"), 0.98),
-        "PHONE": (re.compile(r"(?:\+?\d{1,4}[-.\s]?)?(?:\(?\d{2,4}\)?[-.\s]?)?\d{3,4}[-.\s]?\d{4}\b"), 0.90),
+        "PHONE": (
+            re.compile(
+                r"(?:(?:\+|00)[1-9]\d{0,3}[-.\s]?)?"
+                r"(?:\(?\d{1,4}\)?[-.\s]?)?"
+                r"\d{2,4}[-.\s]\d{2,4}(?:[-.\s]\d{2,4}){1,2}\b|"
+                r"\b\d{3}[-.\s]\d{3}[-.\s]\d{4}\b|"
+                r"\b(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b"
+            ),
+            0.92,
+        ),
         "SSN": (re.compile(r"\b\d{3}-\d{2}-\d{4}\b"), 0.95),
-        "CREDIT_CARD": (re.compile(r"\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})\b|\b(?:\d{4}[-\s]){3}\d{4}\b"), 0.95),
+        "CREDIT_CARD": (
+            re.compile(
+                r"\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})\b|"
+                r"\b(?:\d{4}[-\s]){3}\d{4}\b"
+            ),
+            0.95,
+        ),
         "IPV4": (re.compile(r"\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b"), 0.90),
         "IPV6": (re.compile(r"\b(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}\b", re.IGNORECASE), 0.90),
         "JWT": (re.compile(r"\beyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\b"), 0.99),
         "AWS_KEY": (re.compile(r"\bAKIA[0-9A-Z]{16}\b"), 0.99),
         "GITHUB_TOKEN": (re.compile(r"\bgh[pousr]_[A-Za-z0-9_]{20,255}\b"), 0.99),
         "STRIPE_KEY": (re.compile(r"\b[rs]k_(?:live|test)_[0-9a-zA-Z]{16,99}\b"), 0.99),
-        "ADDRESS": (re.compile(r"\b\d{1,5}\s+[A-Za-z0-9\.\s]+(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way)\b(?:[,\s]+[A-Za-z\s]+[,\s]+[A-Z]{2}\s+\d{5}(?:-\d{4})?)?", re.IGNORECASE), 0.88),
+        "ADDRESS": (
+            re.compile(
+                r"\b(?:Apt\.?|Suite|Ste\.?|Unit|Room|Rm\.?|Floor|Fl\.?|Building|Bldg\.?)\s*#?\s*\d+[A-Za-z]?\b|"
+                r"\b\d{1,5}\s+[A-Za-z0-9\.\s\-]+?\s*(?:Street|St|Avenue|Ave|Road|Rd|Boulevard|Blvd|Drive|Dr|Lane|Ln|Way|Court|Ct|Place|Pl|Square|Sq|Circle|Cir)\b|"
+                r"\b(?:Rue|Rua|Calle|Avenida|Av\.?|Via|Corso|Piazza)\s+(?:de\s+|do\s+|da\s+|del\s+)?[A-Za-z0-9\.\s\-]+?\s+\d{1,5}\b|"
+                r"\b[A-Za-z\u00C0-\u024F\-]+(?:\s+[A-Za-z\u00C0-\u024F\-]+)?\s*(?:tie|katu|gata|strasse|straße|str|weg|gasse|kuja|allika|utca|u\.)\s+\d{1,5}\.?\b|"
+                r"\b(?:PSC|Box)\s+\d+.*?(?:APO|FPO|DPO)\s+[A-Z]{2}\s+\d{5}\b",
+                re.IGNORECASE,
+            ),
+            0.88,
+        ),
+        "ZIP_CODE": (re.compile(r"\b\d{5}(?:-\d{4})?\b"), 0.85),
         "GENERIC_API_KEY": (re.compile(r"\b(?:api[_-]?key|secret[_-]?key|access[_-]?token)[\s:=]+['\"]?([a-zA-Z0-9_\-]{20,64})['\"]?", re.IGNORECASE), 0.90),
         "IBAN": (re.compile(r"\b[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[0-9]{7}([A-Z0-9]?){0,16}\b"), 0.90),
         "PASSPORT": (re.compile(r"\b[A-Z][0-9]{8}\b"), 0.70),
@@ -92,8 +118,21 @@ class PIIGuard:
                     )
                 )
 
-        matches.sort(key=lambda x: x.start)
-        return matches
+        # Deduplicate overlapping matches: keep higher confidence or longer match
+        matches.sort(key=lambda x: (x.start, -(x.confidence), -(x.end - x.start)))
+        non_overlapping: List[PIIMatch] = []
+        for m in matches:
+            if not non_overlapping:
+                non_overlapping.append(m)
+                continue
+            prev = non_overlapping[-1]
+            if m.start < prev.end:
+                if m.confidence > prev.confidence or (m.confidence == prev.confidence and (m.end - m.start) > (prev.end - prev.start)):
+                    non_overlapping[-1] = m
+            else:
+                non_overlapping.append(m)
+
+        return non_overlapping
 
     def redact(self, text: str, mode: str = "mask") -> str:
         """Redact detected PII according to mode ('mask', 'hash', 'partial', 'remove')."""
