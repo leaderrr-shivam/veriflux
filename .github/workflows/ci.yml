@@ -1,0 +1,64 @@
+name: Veriflux CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test (Python ${{ matrix.python-version }} on ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Verify Zero Runtime Dependencies
+        run: |
+          python -c "import sys; print('Python version:', sys.version)"
+          python -c "import veriflux; print('Veriflux imported successfully on clean stdlib!')"
+        env:
+          PYTHONPATH: src
+
+      - name: Run Test Suite (53 unit & integration tests)
+        run: |
+          python tests/run_all.py
+
+      - name: Run Real-World Industry Benchmarks
+        run: |
+          python benchmarks/run_industry_benchmarks.py
+
+  build-dist:
+    name: Build Distribution Packages (Wheel & sdist)
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build Wheel & Source Distribution
+        run: |
+          python scripts/build_dist.py
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: veriflux-packages
+          path: dist/*

@@ -10,12 +10,14 @@ readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.10"
 authors = [
-    { name = "Veriflux Contributors" },
+    { name = "Shivam", email = "shivam@veriflux.dev" },
 ]
 keywords = [
-    "ai", "ml", "llm", "testing", "evaluation", "guardrails",
-    "hallucination", "pytest", "ci-cd", "reliability",
-    "context-engineering", "agent-tracing", "structured-output",
+    "ai", "ml", "llm", "llm-evaluation", "hallucination-detection",
+    "rag-evaluation", "guardrails", "prompt-injection", "json-repair",
+    "pii-detection", "pii-redaction", "agent-tracing", "truthfulqa",
+    "halueval", "zero-dependency", "ai-safety", "testing", "pytest",
+    "context-engineering", "structured-output", "reliability",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -75,11 +77,11 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/veriflux/veriflux"
-Documentation = "https://veriflux.dev"
-Repository = "https://github.com/veriflux/veriflux"
-Changelog = "https://github.com/veriflux/veriflux/blob/main/CHANGELOG.md"
-Issues = "https://github.com/veriflux/veriflux/issues"
+Homepage = "https://github.com/leaderrr-shivam/veriflux"
+Repository = "https://github.com/leaderrr-shivam/veriflux"
+Documentation = "https://github.com/leaderrr-shivam/veriflux#readme"
+Changelog = "https://github.com/leaderrr-shivam/veriflux/blob/main/CHANGELOG.md"
+Issues = "https://github.com/leaderrr-shivam/veriflux/issues"
 
 # === PYTEST PLUGIN ENTRY POINT ===
 [project.entry-points.pytest11]

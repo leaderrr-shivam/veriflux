@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use Veriflux in your research, production AI systems, or evaluations, please cite it as below."
+title: "Veriflux: The Zero-Dependency AI/ML Evaluation, Hallucination Detection, and Reliability Framework"
+abstract: "Veriflux is a high-performance, pure Python 3.10+ standard library evaluation, guardrails, context engineering, and reliability framework for large language models (LLMs) and agentic workflows. Built completely from zero with no external runtime dependencies."
+version: 0.1.0
+date-released: 2026-11-02
+license: Apache-2.0
+repository-code: "https://github.com/leaderrr-shivam/veriflux"
+url: "https://github.com/leaderrr-shivam/veriflux"
+authors:
+  - name: "Shivam"
+    website: "https://github.com/leaderrr-shivam"
+keywords:
+  - "llm-evaluation"
+  - "hallucination-detection"
+  - "rag-evaluation"
+  - "guardrails"
+  - "prompt-injection"
+  - "json-repair"
+  - "pii-redaction"
+  - "agent-tracing"
+  - "truthfulqa"
+  - "halueval"
+  - "zero-dependency"
+  - "ai-safety"
