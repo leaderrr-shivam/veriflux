@@ -398,3 +398,8 @@ class BM25:
     def vocabulary_size(self) -> int:
         """Number of unique terms in the index."""
         return len(self._index.postings)
+
+
+# Ergonomic aliases
+BM25Plus = BM25
+BM25Okapi = BM25

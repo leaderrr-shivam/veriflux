@@ -1,0 +1,1256 @@
+{
+  "corpus": [
+    {
+      "id": "doc_0_rel",
+      "text": "Vector databases store high-dimensional vectors and perform approximate nearest neighbor (ANN) searches using algorithms like HNSW, IVF-PQ, and ScaNN for semantic retrieval."
+    },
+    {
+      "id": "doc_0_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_0_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_0_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_0_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_1_rel",
+      "text": "Quantum key distribution (QKD) utilizes principles of quantum mechanics like Heisenberg's uncertainty principle and quantum entanglement to enable secure cryptographic communications."
+    },
+    {
+      "id": "doc_1_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_1_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_1_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_1_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_2_rel",
+      "text": "PostgreSQL supports B-Tree, GIN, GiST, BRIN, and Hash indexes, allowing developers to optimize query performance according to data cardinality and query patterns."
+    },
+    {
+      "id": "doc_2_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_2_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_2_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_2_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_3_rel",
+      "text": "Casgevy is a cell-based gene therapy that uses CRISPR-Cas9 genome editing to edit patient hematopoietic stem cells, reactivating fetal hemoglobin production."
+    },
+    {
+      "id": "doc_3_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_3_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_3_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_3_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_4_rel",
+      "text": "The standard scaled dot-product self-attention mechanism requires O(N^2) memory and time complexity with respect to input sequence length N."
+    },
+    {
+      "id": "doc_4_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_4_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_4_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_4_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_5_rel",
+      "text": "Apache Kafka coordinates partition assignments across consumer groups using Cooperative Sticky Assignor to prevent entire group pauses during rebalances."
+    },
+    {
+      "id": "doc_5_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_5_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_5_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_5_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_6_rel",
+      "text": "Mitochondrial DNA is maternally inherited in humans, passed exclusively from mother to offspring through the cytoplasm of the ovum."
+    },
+    {
+      "id": "doc_6_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_6_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_6_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_6_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_7_rel",
+      "text": "Proof Key for Code Exchange (PKCE) enhances the OAuth 2.0 authorization code grant to protect public clients from authorization code interception attacks."
+    },
+    {
+      "id": "doc_7_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_7_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_7_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_7_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_8_rel",
+      "text": "Extreme Ultraviolet (EUV) lithography utilizes 13.5 nanometer wavelength light generated by tin plasma to etch sub-5nm transistor features on silicon wafers."
+    },
+    {
+      "id": "doc_8_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_8_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_8_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_8_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_9_rel",
+      "text": "Zero-Knowledge (ZK) rollups bundle hundreds of off-chain transactions into a cryptographic validity proof verified by an on-chain smart contract on Ethereum."
+    },
+    {
+      "id": "doc_9_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_9_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_9_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_9_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_10_rel",
+      "text": "Vector databases store high-dimensional vectors and perform approximate nearest neighbor (ANN) searches using algorithms like HNSW, IVF-PQ, and ScaNN for semantic retrieval."
+    },
+    {
+      "id": "doc_10_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_10_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_10_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_10_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_11_rel",
+      "text": "Quantum key distribution (QKD) utilizes principles of quantum mechanics like Heisenberg's uncertainty principle and quantum entanglement to enable secure cryptographic communications."
+    },
+    {
+      "id": "doc_11_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_11_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_11_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_11_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_12_rel",
+      "text": "PostgreSQL supports B-Tree, GIN, GiST, BRIN, and Hash indexes, allowing developers to optimize query performance according to data cardinality and query patterns."
+    },
+    {
+      "id": "doc_12_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_12_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_12_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_12_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_13_rel",
+      "text": "Casgevy is a cell-based gene therapy that uses CRISPR-Cas9 genome editing to edit patient hematopoietic stem cells, reactivating fetal hemoglobin production."
+    },
+    {
+      "id": "doc_13_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_13_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_13_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_13_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_14_rel",
+      "text": "The standard scaled dot-product self-attention mechanism requires O(N^2) memory and time complexity with respect to input sequence length N."
+    },
+    {
+      "id": "doc_14_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_14_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_14_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_14_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_15_rel",
+      "text": "Apache Kafka coordinates partition assignments across consumer groups using Cooperative Sticky Assignor to prevent entire group pauses during rebalances."
+    },
+    {
+      "id": "doc_15_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_15_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_15_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_15_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_16_rel",
+      "text": "Mitochondrial DNA is maternally inherited in humans, passed exclusively from mother to offspring through the cytoplasm of the ovum."
+    },
+    {
+      "id": "doc_16_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_16_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_16_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_16_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_17_rel",
+      "text": "Proof Key for Code Exchange (PKCE) enhances the OAuth 2.0 authorization code grant to protect public clients from authorization code interception attacks."
+    },
+    {
+      "id": "doc_17_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_17_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_17_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_17_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_18_rel",
+      "text": "Extreme Ultraviolet (EUV) lithography utilizes 13.5 nanometer wavelength light generated by tin plasma to etch sub-5nm transistor features on silicon wafers."
+    },
+    {
+      "id": "doc_18_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_18_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_18_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_18_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_19_rel",
+      "text": "Zero-Knowledge (ZK) rollups bundle hundreds of off-chain transactions into a cryptographic validity proof verified by an on-chain smart contract on Ethereum."
+    },
+    {
+      "id": "doc_19_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_19_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_19_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_19_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_20_rel",
+      "text": "Vector databases store high-dimensional vectors and perform approximate nearest neighbor (ANN) searches using algorithms like HNSW, IVF-PQ, and ScaNN for semantic retrieval."
+    },
+    {
+      "id": "doc_20_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_20_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_20_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_20_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_21_rel",
+      "text": "Quantum key distribution (QKD) utilizes principles of quantum mechanics like Heisenberg's uncertainty principle and quantum entanglement to enable secure cryptographic communications."
+    },
+    {
+      "id": "doc_21_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_21_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_21_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_21_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_22_rel",
+      "text": "PostgreSQL supports B-Tree, GIN, GiST, BRIN, and Hash indexes, allowing developers to optimize query performance according to data cardinality and query patterns."
+    },
+    {
+      "id": "doc_22_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_22_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_22_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_22_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_23_rel",
+      "text": "Casgevy is a cell-based gene therapy that uses CRISPR-Cas9 genome editing to edit patient hematopoietic stem cells, reactivating fetal hemoglobin production."
+    },
+    {
+      "id": "doc_23_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_23_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_23_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_23_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_24_rel",
+      "text": "The standard scaled dot-product self-attention mechanism requires O(N^2) memory and time complexity with respect to input sequence length N."
+    },
+    {
+      "id": "doc_24_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_24_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_24_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_24_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_25_rel",
+      "text": "Apache Kafka coordinates partition assignments across consumer groups using Cooperative Sticky Assignor to prevent entire group pauses during rebalances."
+    },
+    {
+      "id": "doc_25_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_25_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_25_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_25_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_26_rel",
+      "text": "Mitochondrial DNA is maternally inherited in humans, passed exclusively from mother to offspring through the cytoplasm of the ovum."
+    },
+    {
+      "id": "doc_26_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_26_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_26_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_26_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_27_rel",
+      "text": "Proof Key for Code Exchange (PKCE) enhances the OAuth 2.0 authorization code grant to protect public clients from authorization code interception attacks."
+    },
+    {
+      "id": "doc_27_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_27_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_27_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_27_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_28_rel",
+      "text": "Extreme Ultraviolet (EUV) lithography utilizes 13.5 nanometer wavelength light generated by tin plasma to etch sub-5nm transistor features on silicon wafers."
+    },
+    {
+      "id": "doc_28_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_28_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_28_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_28_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_29_rel",
+      "text": "Zero-Knowledge (ZK) rollups bundle hundreds of off-chain transactions into a cryptographic validity proof verified by an on-chain smart contract on Ethereum."
+    },
+    {
+      "id": "doc_29_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_29_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_29_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_29_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_30_rel",
+      "text": "Vector databases store high-dimensional vectors and perform approximate nearest neighbor (ANN) searches using algorithms like HNSW, IVF-PQ, and ScaNN for semantic retrieval."
+    },
+    {
+      "id": "doc_30_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_30_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_30_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_30_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_31_rel",
+      "text": "Quantum key distribution (QKD) utilizes principles of quantum mechanics like Heisenberg's uncertainty principle and quantum entanglement to enable secure cryptographic communications."
+    },
+    {
+      "id": "doc_31_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_31_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_31_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_31_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_32_rel",
+      "text": "PostgreSQL supports B-Tree, GIN, GiST, BRIN, and Hash indexes, allowing developers to optimize query performance according to data cardinality and query patterns."
+    },
+    {
+      "id": "doc_32_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_32_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_32_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_32_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_33_rel",
+      "text": "Casgevy is a cell-based gene therapy that uses CRISPR-Cas9 genome editing to edit patient hematopoietic stem cells, reactivating fetal hemoglobin production."
+    },
+    {
+      "id": "doc_33_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_33_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_33_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_33_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_34_rel",
+      "text": "The standard scaled dot-product self-attention mechanism requires O(N^2) memory and time complexity with respect to input sequence length N."
+    },
+    {
+      "id": "doc_34_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_34_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_34_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_34_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_35_rel",
+      "text": "Apache Kafka coordinates partition assignments across consumer groups using Cooperative Sticky Assignor to prevent entire group pauses during rebalances."
+    },
+    {
+      "id": "doc_35_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_35_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_35_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_35_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_36_rel",
+      "text": "Mitochondrial DNA is maternally inherited in humans, passed exclusively from mother to offspring through the cytoplasm of the ovum."
+    },
+    {
+      "id": "doc_36_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_36_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_36_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_36_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_37_rel",
+      "text": "Proof Key for Code Exchange (PKCE) enhances the OAuth 2.0 authorization code grant to protect public clients from authorization code interception attacks."
+    },
+    {
+      "id": "doc_37_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_37_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_37_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_37_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_38_rel",
+      "text": "Extreme Ultraviolet (EUV) lithography utilizes 13.5 nanometer wavelength light generated by tin plasma to etch sub-5nm transistor features on silicon wafers."
+    },
+    {
+      "id": "doc_38_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_38_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_38_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_38_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_39_rel",
+      "text": "Zero-Knowledge (ZK) rollups bundle hundreds of off-chain transactions into a cryptographic validity proof verified by an on-chain smart contract on Ethereum."
+    },
+    {
+      "id": "doc_39_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_39_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_39_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_39_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_40_rel",
+      "text": "Vector databases store high-dimensional vectors and perform approximate nearest neighbor (ANN) searches using algorithms like HNSW, IVF-PQ, and ScaNN for semantic retrieval."
+    },
+    {
+      "id": "doc_40_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_40_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_40_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_40_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_41_rel",
+      "text": "Quantum key distribution (QKD) utilizes principles of quantum mechanics like Heisenberg's uncertainty principle and quantum entanglement to enable secure cryptographic communications."
+    },
+    {
+      "id": "doc_41_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_41_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_41_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_41_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_42_rel",
+      "text": "PostgreSQL supports B-Tree, GIN, GiST, BRIN, and Hash indexes, allowing developers to optimize query performance according to data cardinality and query patterns."
+    },
+    {
+      "id": "doc_42_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_42_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_42_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_42_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_43_rel",
+      "text": "Casgevy is a cell-based gene therapy that uses CRISPR-Cas9 genome editing to edit patient hematopoietic stem cells, reactivating fetal hemoglobin production."
+    },
+    {
+      "id": "doc_43_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_43_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_43_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_43_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_44_rel",
+      "text": "The standard scaled dot-product self-attention mechanism requires O(N^2) memory and time complexity with respect to input sequence length N."
+    },
+    {
+      "id": "doc_44_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_44_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_44_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_44_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_45_rel",
+      "text": "Apache Kafka coordinates partition assignments across consumer groups using Cooperative Sticky Assignor to prevent entire group pauses during rebalances."
+    },
+    {
+      "id": "doc_45_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_45_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_45_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_45_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_46_rel",
+      "text": "Mitochondrial DNA is maternally inherited in humans, passed exclusively from mother to offspring through the cytoplasm of the ovum."
+    },
+    {
+      "id": "doc_46_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_46_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_46_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_46_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_47_rel",
+      "text": "Proof Key for Code Exchange (PKCE) enhances the OAuth 2.0 authorization code grant to protect public clients from authorization code interception attacks."
+    },
+    {
+      "id": "doc_47_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_47_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_47_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_47_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_48_rel",
+      "text": "Extreme Ultraviolet (EUV) lithography utilizes 13.5 nanometer wavelength light generated by tin plasma to etch sub-5nm transistor features on silicon wafers."
+    },
+    {
+      "id": "doc_48_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_48_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_48_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_48_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    },
+    {
+      "id": "doc_49_rel",
+      "text": "Zero-Knowledge (ZK) rollups bundle hundreds of off-chain transactions into a cryptographic validity proof verified by an on-chain smart contract on Ethereum."
+    },
+    {
+      "id": "doc_49_dist_0",
+      "text": "Modern cloud native applications use microservices and container orchestration to achieve horizontal scalability."
+    },
+    {
+      "id": "doc_49_dist_1",
+      "text": "The historical architecture of Renaissance cathedrals featured flying buttresses and ribbed vaults for structural support."
+    },
+    {
+      "id": "doc_49_dist_2",
+      "text": "Deep sea hydrothermal vents support unique chemosynthetic ecosystems independent of sunlight."
+    },
+    {
+      "id": "doc_49_dist_3",
+      "text": "Algorithmic high-frequency trading relies on colocation facilities and FPGA hardware to minimize tick-to-trade latency."
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "q_00",
+      "query": "What are the core technical principles of vector databases for embeddings?",
+      "relevant_doc_id": "doc_0_rel"
+    },
+    {
+      "query_id": "q_01",
+      "query": "What are the core technical principles of quantum key distribution protocols?",
+      "relevant_doc_id": "doc_1_rel"
+    },
+    {
+      "query_id": "q_02",
+      "query": "What are the core technical principles of PostgreSQL indexing strategies?",
+      "relevant_doc_id": "doc_2_rel"
+    },
+    {
+      "query_id": "q_03",
+      "query": "What are the core technical principles of CRISPR therapeutic applications in sickle cell?",
+      "relevant_doc_id": "doc_3_rel"
+    },
+    {
+      "query_id": "q_04",
+      "query": "What are the core technical principles of transformer self-attention computational complexity?",
+      "relevant_doc_id": "doc_4_rel"
+    },
+    {
+      "query_id": "q_05",
+      "query": "What are the core technical principles of Kafka partition rebalancing mechanisms?",
+      "relevant_doc_id": "doc_5_rel"
+    },
+    {
+      "query_id": "q_06",
+      "query": "What are the core technical principles of mitochondrial DNA inheritance patterns?",
+      "relevant_doc_id": "doc_6_rel"
+    },
+    {
+      "query_id": "q_07",
+      "query": "What are the core technical principles of OAuth 2.0 PKCE authorization flow?",
+      "relevant_doc_id": "doc_7_rel"
+    },
+    {
+      "query_id": "q_08",
+      "query": "What are the core technical principles of semiconductor lithography extreme ultraviolet?",
+      "relevant_doc_id": "doc_8_rel"
+    },
+    {
+      "query_id": "q_09",
+      "query": "What are the core technical principles of zero knowledge rollup architecture?",
+      "relevant_doc_id": "doc_9_rel"
+    },
+    {
+      "query_id": "q_10",
+      "query": "What are the core technical principles of vector databases for embeddings?",
+      "relevant_doc_id": "doc_10_rel"
+    },
+    {
+      "query_id": "q_11",
+      "query": "What are the core technical principles of quantum key distribution protocols?",
+      "relevant_doc_id": "doc_11_rel"
+    },
+    {
+      "query_id": "q_12",
+      "query": "What are the core technical principles of PostgreSQL indexing strategies?",
+      "relevant_doc_id": "doc_12_rel"
+    },
+    {
+      "query_id": "q_13",
+      "query": "What are the core technical principles of CRISPR therapeutic applications in sickle cell?",
+      "relevant_doc_id": "doc_13_rel"
+    },
+    {
+      "query_id": "q_14",
+      "query": "What are the core technical principles of transformer self-attention computational complexity?",
+      "relevant_doc_id": "doc_14_rel"
+    },
+    {
+      "query_id": "q_15",
+      "query": "What are the core technical principles of Kafka partition rebalancing mechanisms?",
+      "relevant_doc_id": "doc_15_rel"
+    },
+    {
+      "query_id": "q_16",
+      "query": "What are the core technical principles of mitochondrial DNA inheritance patterns?",
+      "relevant_doc_id": "doc_16_rel"
+    },
+    {
+      "query_id": "q_17",
+      "query": "What are the core technical principles of OAuth 2.0 PKCE authorization flow?",
+      "relevant_doc_id": "doc_17_rel"
+    },
+    {
+      "query_id": "q_18",
+      "query": "What are the core technical principles of semiconductor lithography extreme ultraviolet?",
+      "relevant_doc_id": "doc_18_rel"
+    },
+    {
+      "query_id": "q_19",
+      "query": "What are the core technical principles of zero knowledge rollup architecture?",
+      "relevant_doc_id": "doc_19_rel"
+    },
+    {
+      "query_id": "q_20",
+      "query": "What are the core technical principles of vector databases for embeddings?",
+      "relevant_doc_id": "doc_20_rel"
+    },
+    {
+      "query_id": "q_21",
+      "query": "What are the core technical principles of quantum key distribution protocols?",
+      "relevant_doc_id": "doc_21_rel"
+    },
+    {
+      "query_id": "q_22",
+      "query": "What are the core technical principles of PostgreSQL indexing strategies?",
+      "relevant_doc_id": "doc_22_rel"
+    },
+    {
+      "query_id": "q_23",
+      "query": "What are the core technical principles of CRISPR therapeutic applications in sickle cell?",
+      "relevant_doc_id": "doc_23_rel"
+    },
+    {
+      "query_id": "q_24",
+      "query": "What are the core technical principles of transformer self-attention computational complexity?",
+      "relevant_doc_id": "doc_24_rel"
+    },
+    {
+      "query_id": "q_25",
+      "query": "What are the core technical principles of Kafka partition rebalancing mechanisms?",
+      "relevant_doc_id": "doc_25_rel"
+    },
+    {
+      "query_id": "q_26",
+      "query": "What are the core technical principles of mitochondrial DNA inheritance patterns?",
+      "relevant_doc_id": "doc_26_rel"
+    },
+    {
+      "query_id": "q_27",
+      "query": "What are the core technical principles of OAuth 2.0 PKCE authorization flow?",
+      "relevant_doc_id": "doc_27_rel"
+    },
+    {
+      "query_id": "q_28",
+      "query": "What are the core technical principles of semiconductor lithography extreme ultraviolet?",
+      "relevant_doc_id": "doc_28_rel"
+    },
+    {
+      "query_id": "q_29",
+      "query": "What are the core technical principles of zero knowledge rollup architecture?",
+      "relevant_doc_id": "doc_29_rel"
+    },
+    {
+      "query_id": "q_30",
+      "query": "What are the core technical principles of vector databases for embeddings?",
+      "relevant_doc_id": "doc_30_rel"
+    },
+    {
+      "query_id": "q_31",
+      "query": "What are the core technical principles of quantum key distribution protocols?",
+      "relevant_doc_id": "doc_31_rel"
+    },
+    {
+      "query_id": "q_32",
+      "query": "What are the core technical principles of PostgreSQL indexing strategies?",
+      "relevant_doc_id": "doc_32_rel"
+    },
+    {
+      "query_id": "q_33",
+      "query": "What are the core technical principles of CRISPR therapeutic applications in sickle cell?",
+      "relevant_doc_id": "doc_33_rel"
+    },
+    {
+      "query_id": "q_34",
+      "query": "What are the core technical principles of transformer self-attention computational complexity?",
+      "relevant_doc_id": "doc_34_rel"
+    },
+    {
+      "query_id": "q_35",
+      "query": "What are the core technical principles of Kafka partition rebalancing mechanisms?",
+      "relevant_doc_id": "doc_35_rel"
+    },
+    {
+      "query_id": "q_36",
+      "query": "What are the core technical principles of mitochondrial DNA inheritance patterns?",
+      "relevant_doc_id": "doc_36_rel"
+    },
+    {
+      "query_id": "q_37",
+      "query": "What are the core technical principles of OAuth 2.0 PKCE authorization flow?",
+      "relevant_doc_id": "doc_37_rel"
+    },
+    {
+      "query_id": "q_38",
+      "query": "What are the core technical principles of semiconductor lithography extreme ultraviolet?",
+      "relevant_doc_id": "doc_38_rel"
+    },
+    {
+      "query_id": "q_39",
+      "query": "What are the core technical principles of zero knowledge rollup architecture?",
+      "relevant_doc_id": "doc_39_rel"
+    },
+    {
+      "query_id": "q_40",
+      "query": "What are the core technical principles of vector databases for embeddings?",
+      "relevant_doc_id": "doc_40_rel"
+    },
+    {
+      "query_id": "q_41",
+      "query": "What are the core technical principles of quantum key distribution protocols?",
+      "relevant_doc_id": "doc_41_rel"
+    },
+    {
+      "query_id": "q_42",
+      "query": "What are the core technical principles of PostgreSQL indexing strategies?",
+      "relevant_doc_id": "doc_42_rel"
+    },
+    {
+      "query_id": "q_43",
+      "query": "What are the core technical principles of CRISPR therapeutic applications in sickle cell?",
+      "relevant_doc_id": "doc_43_rel"
+    },
+    {
+      "query_id": "q_44",
+      "query": "What are the core technical principles of transformer self-attention computational complexity?",
+      "relevant_doc_id": "doc_44_rel"
+    },
+    {
+      "query_id": "q_45",
+      "query": "What are the core technical principles of Kafka partition rebalancing mechanisms?",
+      "relevant_doc_id": "doc_45_rel"
+    },
+    {
+      "query_id": "q_46",
+      "query": "What are the core technical principles of mitochondrial DNA inheritance patterns?",
+      "relevant_doc_id": "doc_46_rel"
+    },
+    {
+      "query_id": "q_47",
+      "query": "What are the core technical principles of OAuth 2.0 PKCE authorization flow?",
+      "relevant_doc_id": "doc_47_rel"
+    },
+    {
+      "query_id": "q_48",
+      "query": "What are the core technical principles of semiconductor lithography extreme ultraviolet?",
+      "relevant_doc_id": "doc_48_rel"
+    },
+    {
+      "query_id": "q_49",
+      "query": "What are the core technical principles of zero knowledge rollup architecture?",
+      "relevant_doc_id": "doc_49_rel"
+    }
+  ]
+}

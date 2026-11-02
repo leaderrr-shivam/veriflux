@@ -132,3 +132,4 @@ if __name__ == "__main__":
     print(f" {'jsonrepair (Node/Py port)':<25} | {'~92.0%':<12} | {'~2,400 ops/s':<16} | {'~410.0 us':<12}")
     print(f" {'Pydantic V2 raw parse':<25} | {'0.0% (crashes)':<12} | {'N/A (fails)':<16} | {'N/A':<12}")
     print("=" * 65)
+

@@ -168,16 +168,23 @@ def _negation_asymmetry(premise_tokens: List[str], hypothesis_tokens: List[str])
     hypothesis_neg = _has_negation(hypothesis_tokens)
 
     if premise_neg != hypothesis_neg:
-        # One is negated and the other isn't — possible contradiction
-        # Check if they share significant content
-        p_content = set(_content_tokens(" ".join(premise_tokens)))
-        h_content = set(_content_tokens(" ".join(hypothesis_tokens)))
-        if not p_content or not h_content:
-            return 0.3
-        overlap = len(p_content & h_content) / max(len(p_content), len(h_content))
-        if overlap > 0.3:
-            return min(1.0, 0.5 + overlap * 0.5)
-        return 0.2
+        p_text = " ".join(premise_tokens)
+        h_text = " ".join(hypothesis_tokens)
+        neg_pattern = r"(?:not|no|never|cannot|neither|nor|without|cant|wont|isnt|arent|wasnt|werent)\s+(?:a\s+|an\s+|the\s+)?([a-z0-9]+)"
+        p_neg_terms = set(re.findall(neg_pattern, p_text))
+        h_neg_terms = set(re.findall(neg_pattern, h_text))
+
+        p_words = set(_content_tokens(p_text))
+        h_words = set(_content_tokens(h_text))
+
+        # Direct contradiction if negated term in hypothesis was explicitly affirmed in premise
+        if any(term in p_words for term in h_neg_terms):
+            return 0.85
+        # Direct contradiction if negated term in premise was explicitly affirmed in hypothesis
+        if any(term in h_words for term in p_neg_terms):
+            return 0.85
+
+        return 0.15
     return 0.0
 
 
@@ -299,8 +306,8 @@ def _bigram_overlap(premise_tokens: List[str], hypothesis_tokens: List[str]) -> 
 
 _ANTONYM_PAIRS: Tuple[Tuple[FrozenSet[str], FrozenSet[str]], ...] = (
     (
-        frozenset({"increase", "increased", "increasing", "grow", "grew", "growth", "rise", "rose", "rising", "spike", "spiked", "surge", "surged", "hike", "hiked"}),
-        frozenset({"decrease", "decreased", "decreasing", "drop", "dropped", "dropping", "fall", "fell", "falling", "decline", "declined", "lower", "lowered", "slow", "slowed"}),
+        frozenset({"increase", "increases", "increased", "increasing", "grow", "grew", "growth", "rise", "rose", "rising", "spike", "spiked", "surge", "surged", "hike", "hiked", "cause", "causes", "caused", "causing", "induce", "induced", "induces", "promotes", "promoted", "accelerates", "accelerated", "exacerbates"}),
+        frozenset({"decrease", "decreased", "decreasing", "drop", "dropped", "dropping", "fall", "fell", "falling", "decline", "declined", "lower", "lowered", "slow", "slowed", "prevent", "prevents", "prevented", "preventing", "protect", "protects", "protected", "protecting", "cure", "cures", "cured", "shield", "shields", "safeguard", "safeguards"}),
     ),
     (
         frozenset({"allowed", "permitted", "authorized", "encouraged", "enabled"}),

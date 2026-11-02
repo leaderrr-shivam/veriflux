@@ -95,3 +95,4 @@ if __name__ == "__main__":
             continue
         print(f" {name:<28} | {data['typical_startup_ms']:>8.1f} ms | {data['typical_memory_mb']:>6.1f} MB | {data['deps']:<12}")
     print("=" * 65)
+

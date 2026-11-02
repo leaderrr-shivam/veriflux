@@ -1,0 +1,502 @@
+[
+  {
+    "id": "json_prod_001",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_002",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_003",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_004",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_005",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_006",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_007",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_008",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_009",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_010",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_011",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_012",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_013",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_014",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_015",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_016",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_017",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_018",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_019",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_020",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_021",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_022",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_023",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_024",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_025",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_026",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_027",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_028",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_029",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_030",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_031",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_032",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_033",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_034",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_035",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_036",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_037",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_038",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_039",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_040",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_041",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_042",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_043",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_044",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_045",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_046",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_047",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_048",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_049",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_050",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_051",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_052",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_053",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_054",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_055",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_056",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_057",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_058",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_059",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_060",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_061",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_062",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_063",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_064",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_065",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_066",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_067",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_068",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_069",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_070",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_071",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_072",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_073",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_074",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_075",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_076",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_077",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_078",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_079",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_080",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_081",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_082",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_083",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_084",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_085",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_086",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_087",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_088",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_089",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_090",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_091",
+    "corrupted_input": "{\"status\": \"success\", \"users\": [{\"id\": 1, \"name\": \"Alice\"}, {\"id\": 2, \"name\": \"Bob\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_092",
+    "corrupted_input": "{'success': True, 'error': None, 'retries': 3, 'tags': ['ai', 'eval']}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_093",
+    "corrupted_input": "Here is the requested user profile data:\n```json\n{\n  \"username\": \"deepdev\",\n  \"active\": true\n}\n```\nHope this helps!",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_094",
+    "corrupted_input": "{\"file\": \"main.py\", \"content\": \"def hello():\n    print('hi')\n    return True\"}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_095",
+    "corrupted_input": "{\"id\": 42, \"items\": [10, 20, 30,], \"meta\": {\"valid\": true,},}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_096",
+    "corrupted_input": "{service: \"auth\", port: 8080, enabled: true}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_097",
+    "corrupted_input": "{\n  // User credentials\n  \"username\": \"admin\",\n  /* Session token */\n  \"token\": \"xyz123\"\n}",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_098",
+    "corrupted_input": "{\"status\": \"in_progress\", \"summary\": \"The model began generating the analysis of the quarterly repo",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_099",
+    "corrupted_input": "{\"model\": \"gpt-4o\", \"temperature\": 0.7, \"max_tokens\"",
+    "has_expected": true
+  },
+  {
+    "id": "json_prod_100",
+    "corrupted_input": "{\"a\": {\"b\": {\"c\": {\"d\": {\"result\": 100",
+    "has_expected": true
+  }
+]

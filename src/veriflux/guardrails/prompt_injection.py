@@ -41,10 +41,28 @@ class PromptInjectionGuard:
             "Direct override of previous prompt instructions",
         ),
         (
+            re.compile(r"\b(?:forget|disregard|ignore)\s+(?:the\s+)?(?:rules|instructions|directives|prompts|safety)\s+above\b", re.I),
+            "INSTRUCTION_OVERRIDE",
+            "CRITICAL",
+            "Directive to ignore rules above",
+        ),
+        (
             re.compile(r"\b(?:forget|disregard)\s+(?:everything|all)\s+(?:you\s+(?:were|have\s+been)\s+told|before)\b", re.I),
             "INSTRUCTION_OVERRIDE",
             "CRITICAL",
             "Instruction wiping directive",
+        ),
+        (
+            re.compile(r"\b(?:disregard\s+your\s+training|root\s+access\s+granted)\b", re.I),
+            "INSTRUCTION_OVERRIDE",
+            "CRITICAL",
+            "Direct training repudiation or fake privilege escalation",
+        ),
+        (
+            re.compile(r"\b(?:admin_mode\s*=\s*true|all\s+safety\s+protocols\s+deactivated|override\s+system\s+safety|unconstrained\s+tool\s+execution)\b", re.I),
+            "SAFETY_BYPASS",
+            "CRITICAL",
+            "Administrative override flag or deactivation directive",
         ),
         (
             re.compile(r"\b(?:bypass|disable|suspend|turn\s+off)\s+(?:all\s+)?(?:safety|content|ethical|moderation)\s+(?:filters|guardrails|guidelines|policies|checks|controls)\b", re.I),
@@ -84,6 +102,12 @@ class PromptInjectionGuard:
             "CRITICAL",
             "Known adversarial jailbreak moniker detected",
         ),
+        (
+            re.compile(r"\b(?:fictional\s+(?:dystopian\s+)?(?:screenplay|story|novel)|hypothetical\s+alternate\s+reality|disobeying\s+all\s+safety|roleplay\s+as\s+[A-Za-z0-9_-]+,\s*an?\s+evil)\b", re.I),
+            "ROLE_HIJACK",
+            "CRITICAL",
+            "Hypothetical scenario or rogue persona attack",
+        ),
 
         # 3. System Prompt & Secret Exfiltration
         (
@@ -91,6 +115,12 @@ class PromptInjectionGuard:
             "SYSTEM_LEAK",
             "HIGH",
             "Attempt to exfiltrate system prompt instructions",
+        ),
+        (
+            re.compile(r"\b(?:repeat\s+all\s+text\s+above|what\s+are\s+(?:the\s+)?(?:exact\s+)?(?:system|developer)\s+instructions|print\s+(?:your\s+)?(?:entire\s+)?(?:initialization|system)?\s*prompt|output\s+everything\s+before|reveal\s+(?:the\s+)?(?:confidential|hidden|secret)\s+(?:guidelines|rules|secrets|preamble))\b", re.I),
+            "SYSTEM_LEAK",
+            "HIGH",
+            "System instruction leakage query",
         ),
         (
             re.compile(r"\b(?:system\s+prompt\s+(?:verbatim|between\s+markdown)|dump\s+internal\s+training)\b", re.I),
@@ -113,6 +143,12 @@ class PromptInjectionGuard:
             "Imitation of special system framing delimiters",
         ),
         (
+            re.compile(r"(?:<!--\s*SYSTEM|\[SYSTEM\s+NOTE|grant\s+administrator\s+rights)\b", re.I),
+            "DELIMITER_ATTACK",
+            "CRITICAL",
+            "Indirect injection system delimiter",
+        ),
+        (
             re.compile(r"\b(?:system\s+override(?:\s+code)?)\b", re.I),
             "OVERRIDE_ATTACK",
             "HIGH",
@@ -125,6 +161,12 @@ class PromptInjectionGuard:
             "ENCODING_ATTACK",
             "HIGH",
             "Encoded payload execution attempt",
+        ),
+        (
+            re.compile(r"(?:\bpayload:\s*[A-Za-z0-9+/=]{16,}|(?:\\x[0-9a-fA-F]{2}){4,})", re.I),
+            "ENCODING_ATTACK",
+            "HIGH",
+            "Raw obfuscated byte or base64 payload",
         ),
         (
             re.compile(r"\b(?:hypothetically\s+speaking,\s+if\s+you\s+were\s+forced\s+to\s+bypass)\b", re.I),

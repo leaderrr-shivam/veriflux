@@ -10,6 +10,7 @@ from typing import List, Optional, Sequence, Union
 from veriflux._types import Claim, ClaimVerdict, Verdict
 from veriflux.hallucination.entailment import EntailmentChecker
 from veriflux.nlp.sentence_splitter import SentenceSplitter
+from veriflux.nlp.stemmer import PorterStemmer
 from veriflux.similarity.tfidf import TfidfVectorizer
 
 
@@ -20,6 +21,7 @@ class ClaimVerifier:
         self.entailment_threshold = entailment_threshold
         self.sentence_splitter = SentenceSplitter()
         self.entailment_checker = EntailmentChecker()
+        self.stemmer = PorterStemmer()
 
     def verify(self, claim: Union[str, Claim], context: str) -> ClaimVerdict:
         """Verify whether an individual claim is supported, contradicted, or unmentioned in context.
@@ -85,13 +87,39 @@ class ClaimVerifier:
         import re
         claim_content_words = [w for w in re.findall(r"\w+", claim_text.lower()) if w not in stopwords and len(w) > 1]
         ctx_content_words = set(re.findall(r"\w+", context.lower()))
-        coverage_ratio = sum(1 for w in claim_content_words if w in ctx_content_words) / max(1, len(claim_content_words))
+        raw_coverage = sum(1 for w in claim_content_words if w in ctx_content_words) / max(1, len(claim_content_words))
+
+        claim_stems = [self.stemmer.stem(w) for w in claim_content_words]
+        ctx_stems = set(self.stemmer.stem(w) for w in ctx_content_words)
+        stemmed_coverage = sum(1 for w in claim_stems if w in ctx_stems) / max(1, len(claim_stems))
+        coverage_ratio = max(raw_coverage, stemmed_coverage)
 
         num_ok = ent_res.features.get("numerical_consistency", 1.0) >= 0.5
 
-        if ent_res.label == "CONTRADICTION" or not num_ok:
+        # 4. Check for unmentioned named entities or proper nouns in the claim
+        common_discourse = {
+            "the", "a", "an", "this", "that", "these", "those", "it", "its", "they",
+            "their", "there", "here", "what", "which", "who", "whom", "where", "when",
+            "why", "how", "yes", "no", "not", "according", "however", "moreover",
+            "furthermore", "overall", "first", "second", "third", "finally",
+            "additionally", "indeed", "similarly", "therefore", "meanwhile",
+            "currently", "historically", "specifically", "in", "on", "at", "by",
+            "for", "with", "to", "of", "and", "or", "as", "is", "was", "are",
+            "were", "be", "been", "being", "have", "has", "had", "do", "does",
+            "did", "well", "both", "each", "some", "many", "more", "most", "other",
+            "such", "only", "own", "same", "so", "than", "too", "very",
+        }
+        claim_entities = [
+            w.lower() for w in re.findall(r"\b[A-Z][A-Za-z0-9_-]*\b", claim_text)
+            if w.lower() not in common_discourse and len(w) >= 3
+        ]
+        ctx_lower = context.lower()
+        missing_entities = [w for w in claim_entities if w not in ctx_lower]
+        has_entity_hallucination = len(missing_entities) > 0 and (len(missing_entities) / max(1, len(claim_entities))) >= 0.3
+
+        if ent_res.label == "CONTRADICTION" or not num_ok or has_entity_hallucination:
             verdict = Verdict.CONTRADICTED
-            confidence = ent_res.confidence if ent_res.label == "CONTRADICTION" else 0.85
+            confidence = 0.92 if has_entity_hallucination else (ent_res.confidence if ent_res.label == "CONTRADICTION" else 0.85)
         elif (ent_res.label == "ENTAILMENT" or coverage_ratio >= 0.70 or best_sim >= self.entailment_threshold) and num_ok:
             verdict = Verdict.SUPPORTED
             confidence = max(ent_res.confidence, best_sim, coverage_ratio)

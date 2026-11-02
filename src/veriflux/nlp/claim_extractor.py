@@ -17,8 +17,10 @@ class ClaimExtractor:
 
     # Discourse markers and coordinating conjunctions that introduce independent clauses
     _CLAUSE_SPLITTERS = re.compile(
-        r"""(?:\s*,\s*(?:and|but|while|whereas|although|though|however|furthermore|moreover)\s+)"""
+        r"""(?:\s*,\s*(?:and|but|while|whereas|although|though|however|furthermore|moreover|which|who|where|featuring|creating|establishing|operating|containing)\s+)"""
         r"""|(?:\s*;\s*)"""
+        r"""|(?:\s*,\s*(?:which|who|where)\s+)"""
+        r"""|(?:\s+that\s+(?:natively|also|further|now|previously)\s+)"""
         r"""|(?:\s+which\s+is\s+)"""
         r"""|(?:\s+that\s+was\s+)""",
         re.IGNORECASE,

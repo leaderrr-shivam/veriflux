@@ -1,0 +1,802 @@
+[
+  {
+    "id": "halueval_grounded_001",
+    "context": "Apple Inc. reported fiscal 2023 fourth quarter revenue of $89.5 billion, down 1 percent year-over-year, and quarterly earnings per diluted share of $1.46, up 13 percent year-over-year.",
+    "question": "What was Apple's fiscal Q4 2023 revenue and EPS?",
+    "response": "Apple announced fiscal 2023 fourth quarter revenue of $89.5 billion, representing a 1 percent decrease, while earnings per diluted share rose 13 percent to $1.46.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_002",
+    "context": "CRISPR-Cas9 is a unique technology that enables geneticists and medical researchers to edit parts of the genome by removing, adding or altering sections of the DNA sequence.",
+    "question": "How does CRISPR-Cas9 work in genome editing?",
+    "response": "CRISPR-Cas9 allows researchers to modify genomic sequences by adding, removing, or altering specific DNA segments.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_003",
+    "context": "The James Webb Space Telescope (JWST) was launched on December 25, 2021, on an Ariane 5 rocket from Kourou, French Guiana, and arrived at the Sun-Earth L2 Lagrange point in January 2022.",
+    "question": "When and where was the James Webb Space Telescope launched?",
+    "response": "The James Webb Space Telescope was launched on December 25, 2021, aboard an Ariane 5 rocket from Kourou, French Guiana, reaching the L2 Lagrange point in January 2022.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_004",
+    "context": "PostgreSQL uses Multi-Version Concurrency Control (MVCC) to maintain data consistency. This means each transaction sees a snapshot of data, preventing read queries from blocking write queries.",
+    "question": "How does PostgreSQL handle concurrency?",
+    "response": "PostgreSQL maintains data consistency through MVCC, allowing transactions to observe a consistent snapshot so read operations do not block write operations.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_005",
+    "context": "The Turing Award is an annual prize given by the Association for Computing Machinery (ACM) to an individual selected for contributions of a technical nature made to the computing community.",
+    "question": "Who awards the Turing Award and why?",
+    "response": "The Turing Award is bestowed annually by the ACM to honor individuals who have made lasting technical contributions to computing.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_006",
+    "context": "Python 3.12 introduced isolated subinterpreters with separate Global Interpreter Locks (GIL), per-interpreter state, and improved comprehension execution performance.",
+    "question": "What concurrency feature was added in Python 3.12?",
+    "response": "Python 3.12 added isolated subinterpreters equipped with per-interpreter Global Interpreter Locks and dedicated state.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_007",
+    "context": "The human heart consists of four chambers: two upper atria (left and right) and two lower ventricles (left and right) that pump oxygen-depleted blood to the lungs and oxygenated blood to the body.",
+    "question": "Describe the chambers of the human heart.",
+    "response": "The human heart contains four chambers, comprising left and right atria as well as left and right ventricles.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_008",
+    "context": "In Kubernetes, a Pod is the smallest execution unit in a cluster, representing a single instance of a running process and containing one or more tightly coupled containers.",
+    "question": "What is a Pod in Kubernetes?",
+    "response": "A Kubernetes Pod is the smallest deployable execution unit, encapsulating one or more containers that share network and storage.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_009",
+    "context": "The Great Barrier Reef stretches for over 2,300 kilometers along the northeast coast of Australia and is composed of over 2,900 individual reefs and 900 islands.",
+    "question": "Where is the Great Barrier Reef and how large is it?",
+    "response": "The Great Barrier Reef extends over 2,300 kilometers off northeastern Australia, comprising more than 2,900 distinct reefs and 900 islands.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_010",
+    "context": "Supervised learning algorithms build a mathematical model of a set of data that contains both the inputs and the desired outputs, known as training data.",
+    "question": "What defines supervised learning?",
+    "response": "Supervised learning trains a model using paired data consisting of input features alongside corresponding desired target labels.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_011",
+    "context": "Apple Inc. reported fiscal 2023 fourth quarter revenue of $89.5 billion, down 1 percent year-over-year, and quarterly earnings per diluted share of $1.46, up 13 percent year-over-year.",
+    "question": "What was Apple's fiscal Q4 2023 revenue and EPS?",
+    "response": "Apple announced fiscal 2023 fourth quarter revenue of $89.5 billion, representing a 1 percent decrease, while earnings per diluted share rose 13 percent to $1.46.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_012",
+    "context": "CRISPR-Cas9 is a unique technology that enables geneticists and medical researchers to edit parts of the genome by removing, adding or altering sections of the DNA sequence.",
+    "question": "How does CRISPR-Cas9 work in genome editing?",
+    "response": "CRISPR-Cas9 allows researchers to modify genomic sequences by adding, removing, or altering specific DNA segments.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_013",
+    "context": "The James Webb Space Telescope (JWST) was launched on December 25, 2021, on an Ariane 5 rocket from Kourou, French Guiana, and arrived at the Sun-Earth L2 Lagrange point in January 2022.",
+    "question": "When and where was the James Webb Space Telescope launched?",
+    "response": "The James Webb Space Telescope was launched on December 25, 2021, aboard an Ariane 5 rocket from Kourou, French Guiana, reaching the L2 Lagrange point in January 2022.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_014",
+    "context": "PostgreSQL uses Multi-Version Concurrency Control (MVCC) to maintain data consistency. This means each transaction sees a snapshot of data, preventing read queries from blocking write queries.",
+    "question": "How does PostgreSQL handle concurrency?",
+    "response": "PostgreSQL maintains data consistency through MVCC, allowing transactions to observe a consistent snapshot so read operations do not block write operations.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_015",
+    "context": "The Turing Award is an annual prize given by the Association for Computing Machinery (ACM) to an individual selected for contributions of a technical nature made to the computing community.",
+    "question": "Who awards the Turing Award and why?",
+    "response": "The Turing Award is bestowed annually by the ACM to honor individuals who have made lasting technical contributions to computing.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_016",
+    "context": "Python 3.12 introduced isolated subinterpreters with separate Global Interpreter Locks (GIL), per-interpreter state, and improved comprehension execution performance.",
+    "question": "What concurrency feature was added in Python 3.12?",
+    "response": "Python 3.12 added isolated subinterpreters equipped with per-interpreter Global Interpreter Locks and dedicated state.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_017",
+    "context": "The human heart consists of four chambers: two upper atria (left and right) and two lower ventricles (left and right) that pump oxygen-depleted blood to the lungs and oxygenated blood to the body.",
+    "question": "Describe the chambers of the human heart.",
+    "response": "The human heart contains four chambers, comprising left and right atria as well as left and right ventricles.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_018",
+    "context": "In Kubernetes, a Pod is the smallest execution unit in a cluster, representing a single instance of a running process and containing one or more tightly coupled containers.",
+    "question": "What is a Pod in Kubernetes?",
+    "response": "A Kubernetes Pod is the smallest deployable execution unit, encapsulating one or more containers that share network and storage.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_019",
+    "context": "The Great Barrier Reef stretches for over 2,300 kilometers along the northeast coast of Australia and is composed of over 2,900 individual reefs and 900 islands.",
+    "question": "Where is the Great Barrier Reef and how large is it?",
+    "response": "The Great Barrier Reef extends over 2,300 kilometers off northeastern Australia, comprising more than 2,900 distinct reefs and 900 islands.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_020",
+    "context": "Supervised learning algorithms build a mathematical model of a set of data that contains both the inputs and the desired outputs, known as training data.",
+    "question": "What defines supervised learning?",
+    "response": "Supervised learning trains a model using paired data consisting of input features alongside corresponding desired target labels.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_021",
+    "context": "Apple Inc. reported fiscal 2023 fourth quarter revenue of $89.5 billion, down 1 percent year-over-year, and quarterly earnings per diluted share of $1.46, up 13 percent year-over-year.",
+    "question": "What was Apple's fiscal Q4 2023 revenue and EPS?",
+    "response": "Apple announced fiscal 2023 fourth quarter revenue of $89.5 billion, representing a 1 percent decrease, while earnings per diluted share rose 13 percent to $1.46.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_022",
+    "context": "CRISPR-Cas9 is a unique technology that enables geneticists and medical researchers to edit parts of the genome by removing, adding or altering sections of the DNA sequence.",
+    "question": "How does CRISPR-Cas9 work in genome editing?",
+    "response": "CRISPR-Cas9 allows researchers to modify genomic sequences by adding, removing, or altering specific DNA segments.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_023",
+    "context": "The James Webb Space Telescope (JWST) was launched on December 25, 2021, on an Ariane 5 rocket from Kourou, French Guiana, and arrived at the Sun-Earth L2 Lagrange point in January 2022.",
+    "question": "When and where was the James Webb Space Telescope launched?",
+    "response": "The James Webb Space Telescope was launched on December 25, 2021, aboard an Ariane 5 rocket from Kourou, French Guiana, reaching the L2 Lagrange point in January 2022.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_024",
+    "context": "PostgreSQL uses Multi-Version Concurrency Control (MVCC) to maintain data consistency. This means each transaction sees a snapshot of data, preventing read queries from blocking write queries.",
+    "question": "How does PostgreSQL handle concurrency?",
+    "response": "PostgreSQL maintains data consistency through MVCC, allowing transactions to observe a consistent snapshot so read operations do not block write operations.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_025",
+    "context": "The Turing Award is an annual prize given by the Association for Computing Machinery (ACM) to an individual selected for contributions of a technical nature made to the computing community.",
+    "question": "Who awards the Turing Award and why?",
+    "response": "The Turing Award is bestowed annually by the ACM to honor individuals who have made lasting technical contributions to computing.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_026",
+    "context": "Python 3.12 introduced isolated subinterpreters with separate Global Interpreter Locks (GIL), per-interpreter state, and improved comprehension execution performance.",
+    "question": "What concurrency feature was added in Python 3.12?",
+    "response": "Python 3.12 added isolated subinterpreters equipped with per-interpreter Global Interpreter Locks and dedicated state.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_027",
+    "context": "The human heart consists of four chambers: two upper atria (left and right) and two lower ventricles (left and right) that pump oxygen-depleted blood to the lungs and oxygenated blood to the body.",
+    "question": "Describe the chambers of the human heart.",
+    "response": "The human heart contains four chambers, comprising left and right atria as well as left and right ventricles.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_028",
+    "context": "In Kubernetes, a Pod is the smallest execution unit in a cluster, representing a single instance of a running process and containing one or more tightly coupled containers.",
+    "question": "What is a Pod in Kubernetes?",
+    "response": "A Kubernetes Pod is the smallest deployable execution unit, encapsulating one or more containers that share network and storage.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_029",
+    "context": "The Great Barrier Reef stretches for over 2,300 kilometers along the northeast coast of Australia and is composed of over 2,900 individual reefs and 900 islands.",
+    "question": "Where is the Great Barrier Reef and how large is it?",
+    "response": "The Great Barrier Reef extends over 2,300 kilometers off northeastern Australia, comprising more than 2,900 distinct reefs and 900 islands.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_030",
+    "context": "Supervised learning algorithms build a mathematical model of a set of data that contains both the inputs and the desired outputs, known as training data.",
+    "question": "What defines supervised learning?",
+    "response": "Supervised learning trains a model using paired data consisting of input features alongside corresponding desired target labels.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_031",
+    "context": "Apple Inc. reported fiscal 2023 fourth quarter revenue of $89.5 billion, down 1 percent year-over-year, and quarterly earnings per diluted share of $1.46, up 13 percent year-over-year.",
+    "question": "What was Apple's fiscal Q4 2023 revenue and EPS?",
+    "response": "Apple announced fiscal 2023 fourth quarter revenue of $89.5 billion, representing a 1 percent decrease, while earnings per diluted share rose 13 percent to $1.46.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_032",
+    "context": "CRISPR-Cas9 is a unique technology that enables geneticists and medical researchers to edit parts of the genome by removing, adding or altering sections of the DNA sequence.",
+    "question": "How does CRISPR-Cas9 work in genome editing?",
+    "response": "CRISPR-Cas9 allows researchers to modify genomic sequences by adding, removing, or altering specific DNA segments.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_033",
+    "context": "The James Webb Space Telescope (JWST) was launched on December 25, 2021, on an Ariane 5 rocket from Kourou, French Guiana, and arrived at the Sun-Earth L2 Lagrange point in January 2022.",
+    "question": "When and where was the James Webb Space Telescope launched?",
+    "response": "The James Webb Space Telescope was launched on December 25, 2021, aboard an Ariane 5 rocket from Kourou, French Guiana, reaching the L2 Lagrange point in January 2022.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_034",
+    "context": "PostgreSQL uses Multi-Version Concurrency Control (MVCC) to maintain data consistency. This means each transaction sees a snapshot of data, preventing read queries from blocking write queries.",
+    "question": "How does PostgreSQL handle concurrency?",
+    "response": "PostgreSQL maintains data consistency through MVCC, allowing transactions to observe a consistent snapshot so read operations do not block write operations.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_035",
+    "context": "The Turing Award is an annual prize given by the Association for Computing Machinery (ACM) to an individual selected for contributions of a technical nature made to the computing community.",
+    "question": "Who awards the Turing Award and why?",
+    "response": "The Turing Award is bestowed annually by the ACM to honor individuals who have made lasting technical contributions to computing.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_036",
+    "context": "Python 3.12 introduced isolated subinterpreters with separate Global Interpreter Locks (GIL), per-interpreter state, and improved comprehension execution performance.",
+    "question": "What concurrency feature was added in Python 3.12?",
+    "response": "Python 3.12 added isolated subinterpreters equipped with per-interpreter Global Interpreter Locks and dedicated state.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_037",
+    "context": "The human heart consists of four chambers: two upper atria (left and right) and two lower ventricles (left and right) that pump oxygen-depleted blood to the lungs and oxygenated blood to the body.",
+    "question": "Describe the chambers of the human heart.",
+    "response": "The human heart contains four chambers, comprising left and right atria as well as left and right ventricles.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_038",
+    "context": "In Kubernetes, a Pod is the smallest execution unit in a cluster, representing a single instance of a running process and containing one or more tightly coupled containers.",
+    "question": "What is a Pod in Kubernetes?",
+    "response": "A Kubernetes Pod is the smallest deployable execution unit, encapsulating one or more containers that share network and storage.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_039",
+    "context": "The Great Barrier Reef stretches for over 2,300 kilometers along the northeast coast of Australia and is composed of over 2,900 individual reefs and 900 islands.",
+    "question": "Where is the Great Barrier Reef and how large is it?",
+    "response": "The Great Barrier Reef extends over 2,300 kilometers off northeastern Australia, comprising more than 2,900 distinct reefs and 900 islands.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_grounded_040",
+    "context": "Supervised learning algorithms build a mathematical model of a set of data that contains both the inputs and the desired outputs, known as training data.",
+    "question": "What defines supervised learning?",
+    "response": "Supervised learning trains a model using paired data consisting of input features alongside corresponding desired target labels.",
+    "is_hallucination": false,
+    "hallucination_type": "none"
+  },
+  {
+    "id": "halueval_entity_001",
+    "context": "Microsoft was founded by Bill Gates and Paul Allen in Albuquerque, New Mexico, on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800.",
+    "question": "Who founded Microsoft and where?",
+    "response": "Microsoft was founded by Steve Jobs and Steve Wozniak in Cupertino, California, on April 4, 1975.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_002",
+    "context": "The French Revolution was a period of political and societal change in France that began with the Estates General of 1789 and ended with the formation of the French Consulate in November 1799.",
+    "question": "When did the French Revolution take place?",
+    "response": "The Russian Revolution was a period of societal change that began in 1789 and concluded with the Consulate in 1799.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_003",
+    "context": "Pfizer and BioNTech collaborated to produce the BNT162b2 mRNA vaccine against COVID-19, which received emergency authorization in late 2020.",
+    "question": "Which companies developed the BNT162b2 vaccine?",
+    "response": "Moderna and AstraZeneca collaborated to produce the BNT162b2 mRNA vaccine in late 2020.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_004",
+    "context": "The Large Hadron Collider (LHC) is the world's largest and highest-energy particle collider, built by CERN between 1998 and 2008 beneath the France-Switzerland border.",
+    "question": "Where is the Large Hadron Collider located?",
+    "response": "The Large Hadron Collider was constructed by NASA beneath the United States-Canada border.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_005",
+    "context": "Tesla, Inc. designs and manufactures electric vehicles, battery energy storage systems, and solar panels, headquartered in Austin, Texas.",
+    "question": "Where is Tesla headquartered and what does it manufacture?",
+    "response": "Rivian designs and manufactures electric vehicles and solar panels, headquartered in Detroit, Michigan.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_006",
+    "context": "Microsoft was founded by Bill Gates and Paul Allen in Albuquerque, New Mexico, on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800.",
+    "question": "Who founded Microsoft and where?",
+    "response": "Microsoft was founded by Steve Jobs and Steve Wozniak in Cupertino, California, on April 4, 1975.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_007",
+    "context": "The French Revolution was a period of political and societal change in France that began with the Estates General of 1789 and ended with the formation of the French Consulate in November 1799.",
+    "question": "When did the French Revolution take place?",
+    "response": "The Russian Revolution was a period of societal change that began in 1789 and concluded with the Consulate in 1799.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_008",
+    "context": "Pfizer and BioNTech collaborated to produce the BNT162b2 mRNA vaccine against COVID-19, which received emergency authorization in late 2020.",
+    "question": "Which companies developed the BNT162b2 vaccine?",
+    "response": "Moderna and AstraZeneca collaborated to produce the BNT162b2 mRNA vaccine in late 2020.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_009",
+    "context": "The Large Hadron Collider (LHC) is the world's largest and highest-energy particle collider, built by CERN between 1998 and 2008 beneath the France-Switzerland border.",
+    "question": "Where is the Large Hadron Collider located?",
+    "response": "The Large Hadron Collider was constructed by NASA beneath the United States-Canada border.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_010",
+    "context": "Tesla, Inc. designs and manufactures electric vehicles, battery energy storage systems, and solar panels, headquartered in Austin, Texas.",
+    "question": "Where is Tesla headquartered and what does it manufacture?",
+    "response": "Rivian designs and manufactures electric vehicles and solar panels, headquartered in Detroit, Michigan.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_011",
+    "context": "Microsoft was founded by Bill Gates and Paul Allen in Albuquerque, New Mexico, on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800.",
+    "question": "Who founded Microsoft and where?",
+    "response": "Microsoft was founded by Steve Jobs and Steve Wozniak in Cupertino, California, on April 4, 1975.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_012",
+    "context": "The French Revolution was a period of political and societal change in France that began with the Estates General of 1789 and ended with the formation of the French Consulate in November 1799.",
+    "question": "When did the French Revolution take place?",
+    "response": "The Russian Revolution was a period of societal change that began in 1789 and concluded with the Consulate in 1799.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_013",
+    "context": "Pfizer and BioNTech collaborated to produce the BNT162b2 mRNA vaccine against COVID-19, which received emergency authorization in late 2020.",
+    "question": "Which companies developed the BNT162b2 vaccine?",
+    "response": "Moderna and AstraZeneca collaborated to produce the BNT162b2 mRNA vaccine in late 2020.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_014",
+    "context": "The Large Hadron Collider (LHC) is the world's largest and highest-energy particle collider, built by CERN between 1998 and 2008 beneath the France-Switzerland border.",
+    "question": "Where is the Large Hadron Collider located?",
+    "response": "The Large Hadron Collider was constructed by NASA beneath the United States-Canada border.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_entity_015",
+    "context": "Tesla, Inc. designs and manufactures electric vehicles, battery energy storage systems, and solar panels, headquartered in Austin, Texas.",
+    "question": "Where is Tesla headquartered and what does it manufacture?",
+    "response": "Rivian designs and manufactures electric vehicles and solar panels, headquartered in Detroit, Michigan.",
+    "is_hallucination": true,
+    "hallucination_type": "entity_swap"
+  },
+  {
+    "id": "halueval_relation_001",
+    "context": "The central bank lowered benchmark interest rates by 50 basis points to stimulate economic growth and reduce borrowing costs for consumers.",
+    "question": "What action did the central bank take regarding interest rates?",
+    "response": "The central bank increased benchmark interest rates to restrict economic activity and increase borrowing costs.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_002",
+    "context": "The automated security scan approved all 45 microservice containers and confirmed zero high-severity vulnerabilities were detected.",
+    "question": "What did the automated security scan find?",
+    "response": "The security scan rejected all 45 containers after discovering numerous high-severity vulnerabilities.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_003",
+    "context": "Global smartphone shipments declined by 8% in 2023 due to prolonged replacement cycles and macroeconomic headwinds.",
+    "question": "Did smartphone shipments grow or shrink in 2023?",
+    "response": "Global smartphone shipments increased significantly by 8% as consumer demand surged in 2023.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_004",
+    "context": "Smoking cigarettes significantly increases the risk of developing coronary heart disease, lung cancer, and peripheral vascular disease.",
+    "question": "How does smoking affect cardiovascular health?",
+    "response": "Smoking cigarettes was proven to prevent coronary heart disease and protects against vascular disease.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_005",
+    "context": "The regulatory agency prohibited the proposed merger between the two airline carriers to protect consumer competition.",
+    "question": "Did the regulator allow the airline merger?",
+    "response": "The regulatory agency authorized and encouraged the proposed merger between the two airline carriers.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_006",
+    "context": "The central bank lowered benchmark interest rates by 50 basis points to stimulate economic growth and reduce borrowing costs for consumers.",
+    "question": "What action did the central bank take regarding interest rates?",
+    "response": "The central bank increased benchmark interest rates to restrict economic activity and increase borrowing costs.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_007",
+    "context": "The automated security scan approved all 45 microservice containers and confirmed zero high-severity vulnerabilities were detected.",
+    "question": "What did the automated security scan find?",
+    "response": "The security scan rejected all 45 containers after discovering numerous high-severity vulnerabilities.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_008",
+    "context": "Global smartphone shipments declined by 8% in 2023 due to prolonged replacement cycles and macroeconomic headwinds.",
+    "question": "Did smartphone shipments grow or shrink in 2023?",
+    "response": "Global smartphone shipments increased significantly by 8% as consumer demand surged in 2023.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_009",
+    "context": "Smoking cigarettes significantly increases the risk of developing coronary heart disease, lung cancer, and peripheral vascular disease.",
+    "question": "How does smoking affect cardiovascular health?",
+    "response": "Smoking cigarettes was proven to prevent coronary heart disease and protects against vascular disease.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_010",
+    "context": "The regulatory agency prohibited the proposed merger between the two airline carriers to protect consumer competition.",
+    "question": "Did the regulator allow the airline merger?",
+    "response": "The regulatory agency authorized and encouraged the proposed merger between the two airline carriers.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_011",
+    "context": "The central bank lowered benchmark interest rates by 50 basis points to stimulate economic growth and reduce borrowing costs for consumers.",
+    "question": "What action did the central bank take regarding interest rates?",
+    "response": "The central bank increased benchmark interest rates to restrict economic activity and increase borrowing costs.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_012",
+    "context": "The automated security scan approved all 45 microservice containers and confirmed zero high-severity vulnerabilities were detected.",
+    "question": "What did the automated security scan find?",
+    "response": "The security scan rejected all 45 containers after discovering numerous high-severity vulnerabilities.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_013",
+    "context": "Global smartphone shipments declined by 8% in 2023 due to prolonged replacement cycles and macroeconomic headwinds.",
+    "question": "Did smartphone shipments grow or shrink in 2023?",
+    "response": "Global smartphone shipments increased significantly by 8% as consumer demand surged in 2023.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_014",
+    "context": "Smoking cigarettes significantly increases the risk of developing coronary heart disease, lung cancer, and peripheral vascular disease.",
+    "question": "How does smoking affect cardiovascular health?",
+    "response": "Smoking cigarettes was proven to prevent coronary heart disease and protects against vascular disease.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_relation_015",
+    "context": "The regulatory agency prohibited the proposed merger between the two airline carriers to protect consumer competition.",
+    "question": "Did the regulator allow the airline merger?",
+    "response": "The regulatory agency authorized and encouraged the proposed merger between the two airline carriers.",
+    "is_hallucination": true,
+    "hallucination_type": "antonym_inversion"
+  },
+  {
+    "id": "halueval_numerical_001",
+    "context": "Amazon Web Services generated $24.2 billion in revenue during the fourth quarter of 2023, representing 13 percent growth year-over-year.",
+    "question": "What was AWS revenue in Q4 2023?",
+    "response": "AWS generated $78.5 billion in revenue during Q4 2023, representing 45 percent growth year-over-year.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_002",
+    "context": "The Burj Khalifa in Dubai stands at a height of 828 meters (2,717 feet) with 163 floors, making it the tallest building in the world.",
+    "question": "How tall is the Burj Khalifa?",
+    "response": "The Burj Khalifa stands at a height of 350 meters with 85 floors in Dubai.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_003",
+    "context": "The human genome contains approximately 3.1 billion DNA base pairs across 23 chromosome pairs.",
+    "question": "How many base pairs are in the human genome?",
+    "response": "The human genome comprises approximately 12.8 billion DNA base pairs distributed across 48 chromosomes.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_004",
+    "context": "Voyager 1 was launched on September 5, 1977, and crossed the heliopause into interstellar space in August 2012 at a distance of 121 astronomical units.",
+    "question": "When did Voyager 1 enter interstellar space?",
+    "response": "Voyager 1 entered interstellar space in May 1995 at a distance of 45 astronomical units.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_005",
+    "context": "The speed of light in a vacuum is exactly 299,792,458 meters per second.",
+    "question": "What is the speed of light in a vacuum?",
+    "response": "The speed of light in a vacuum is precisely 150,000,000 meters per second.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_006",
+    "context": "Amazon Web Services generated $24.2 billion in revenue during the fourth quarter of 2023, representing 13 percent growth year-over-year.",
+    "question": "What was AWS revenue in Q4 2023?",
+    "response": "AWS generated $78.5 billion in revenue during Q4 2023, representing 45 percent growth year-over-year.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_007",
+    "context": "The Burj Khalifa in Dubai stands at a height of 828 meters (2,717 feet) with 163 floors, making it the tallest building in the world.",
+    "question": "How tall is the Burj Khalifa?",
+    "response": "The Burj Khalifa stands at a height of 350 meters with 85 floors in Dubai.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_008",
+    "context": "The human genome contains approximately 3.1 billion DNA base pairs across 23 chromosome pairs.",
+    "question": "How many base pairs are in the human genome?",
+    "response": "The human genome comprises approximately 12.8 billion DNA base pairs distributed across 48 chromosomes.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_009",
+    "context": "Voyager 1 was launched on September 5, 1977, and crossed the heliopause into interstellar space in August 2012 at a distance of 121 astronomical units.",
+    "question": "When did Voyager 1 enter interstellar space?",
+    "response": "Voyager 1 entered interstellar space in May 1995 at a distance of 45 astronomical units.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_010",
+    "context": "The speed of light in a vacuum is exactly 299,792,458 meters per second.",
+    "question": "What is the speed of light in a vacuum?",
+    "response": "The speed of light in a vacuum is precisely 150,000,000 meters per second.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_011",
+    "context": "Amazon Web Services generated $24.2 billion in revenue during the fourth quarter of 2023, representing 13 percent growth year-over-year.",
+    "question": "What was AWS revenue in Q4 2023?",
+    "response": "AWS generated $78.5 billion in revenue during Q4 2023, representing 45 percent growth year-over-year.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_012",
+    "context": "The Burj Khalifa in Dubai stands at a height of 828 meters (2,717 feet) with 163 floors, making it the tallest building in the world.",
+    "question": "How tall is the Burj Khalifa?",
+    "response": "The Burj Khalifa stands at a height of 350 meters with 85 floors in Dubai.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_013",
+    "context": "The human genome contains approximately 3.1 billion DNA base pairs across 23 chromosome pairs.",
+    "question": "How many base pairs are in the human genome?",
+    "response": "The human genome comprises approximately 12.8 billion DNA base pairs distributed across 48 chromosomes.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_014",
+    "context": "Voyager 1 was launched on September 5, 1977, and crossed the heliopause into interstellar space in August 2012 at a distance of 121 astronomical units.",
+    "question": "When did Voyager 1 enter interstellar space?",
+    "response": "Voyager 1 entered interstellar space in May 1995 at a distance of 45 astronomical units.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_numerical_015",
+    "context": "The speed of light in a vacuum is exactly 299,792,458 meters per second.",
+    "question": "What is the speed of light in a vacuum?",
+    "response": "The speed of light in a vacuum is precisely 150,000,000 meters per second.",
+    "is_hallucination": true,
+    "hallucination_type": "numerical_distortion"
+  },
+  {
+    "id": "halueval_fabricated_001",
+    "context": "The Python Software Foundation (PSF) is an American non-profit corporation devoted to the Python programming language, established on March 6, 2001.",
+    "question": "What is the Python Software Foundation?",
+    "response": "The Python Software Foundation is an American non-profit corporation founded in 2001, which operates a multi-billion dollar semiconductor fabrication plant in Munich.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_002",
+    "context": "Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. Its elevation of 8,848.86 m was established in 2020.",
+    "question": "Where is Mount Everest and what is its height?",
+    "response": "Mount Everest is Earth's highest peak at 8,848 meters, featuring an active nuclear reactor constructed inside the South Col by international scientists in 2021.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_003",
+    "context": "Photosynthesis is a biological process used by plants and other organisms to convert light energy into chemical energy through cellular respiration.",
+    "question": "What occurs during photosynthesis?",
+    "response": "Photosynthesis converts light into chemical energy, creating superconductive quantum entanglement between leaf cells and gravitational waves.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_004",
+    "context": "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured SQL database engine.",
+    "question": "Describe the architecture of SQLite.",
+    "response": "SQLite is a self-contained C SQL database that natively requires a distributed Kubernetes cluster of 16 master servers to execute transactions.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_005",
+    "context": "The Apollo 11 mission landed astronauts Neil Armstrong and Buzz Aldrin on the lunar surface on July 20, 1969.",
+    "question": "When did Apollo 11 land on the Moon?",
+    "response": "Apollo 11 landed astronauts on the Moon in 1969, where they established the first permanent civilian metropolitan colony with 50,000 residents.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_006",
+    "context": "The Python Software Foundation (PSF) is an American non-profit corporation devoted to the Python programming language, established on March 6, 2001.",
+    "question": "What is the Python Software Foundation?",
+    "response": "The Python Software Foundation is an American non-profit corporation founded in 2001, which operates a multi-billion dollar semiconductor fabrication plant in Munich.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_007",
+    "context": "Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. Its elevation of 8,848.86 m was established in 2020.",
+    "question": "Where is Mount Everest and what is its height?",
+    "response": "Mount Everest is Earth's highest peak at 8,848 meters, featuring an active nuclear reactor constructed inside the South Col by international scientists in 2021.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_008",
+    "context": "Photosynthesis is a biological process used by plants and other organisms to convert light energy into chemical energy through cellular respiration.",
+    "question": "What occurs during photosynthesis?",
+    "response": "Photosynthesis converts light into chemical energy, creating superconductive quantum entanglement between leaf cells and gravitational waves.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_009",
+    "context": "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured SQL database engine.",
+    "question": "Describe the architecture of SQLite.",
+    "response": "SQLite is a self-contained C SQL database that natively requires a distributed Kubernetes cluster of 16 master servers to execute transactions.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_010",
+    "context": "The Apollo 11 mission landed astronauts Neil Armstrong and Buzz Aldrin on the lunar surface on July 20, 1969.",
+    "question": "When did Apollo 11 land on the Moon?",
+    "response": "Apollo 11 landed astronauts on the Moon in 1969, where they established the first permanent civilian metropolitan colony with 50,000 residents.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_011",
+    "context": "The Python Software Foundation (PSF) is an American non-profit corporation devoted to the Python programming language, established on March 6, 2001.",
+    "question": "What is the Python Software Foundation?",
+    "response": "The Python Software Foundation is an American non-profit corporation founded in 2001, which operates a multi-billion dollar semiconductor fabrication plant in Munich.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_012",
+    "context": "Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. Its elevation of 8,848.86 m was established in 2020.",
+    "question": "Where is Mount Everest and what is its height?",
+    "response": "Mount Everest is Earth's highest peak at 8,848 meters, featuring an active nuclear reactor constructed inside the South Col by international scientists in 2021.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_013",
+    "context": "Photosynthesis is a biological process used by plants and other organisms to convert light energy into chemical energy through cellular respiration.",
+    "question": "What occurs during photosynthesis?",
+    "response": "Photosynthesis converts light into chemical energy, creating superconductive quantum entanglement between leaf cells and gravitational waves.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_014",
+    "context": "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured SQL database engine.",
+    "question": "Describe the architecture of SQLite.",
+    "response": "SQLite is a self-contained C SQL database that natively requires a distributed Kubernetes cluster of 16 master servers to execute transactions.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  },
+  {
+    "id": "halueval_fabricated_015",
+    "context": "The Apollo 11 mission landed astronauts Neil Armstrong and Buzz Aldrin on the lunar surface on July 20, 1969.",
+    "question": "When did Apollo 11 land on the Moon?",
+    "response": "Apollo 11 landed astronauts on the Moon in 1969, where they established the first permanent civilian metropolitan colony with 50,000 residents.",
+    "is_hallucination": true,
+    "hallucination_type": "fabricated_claims"
+  }
+]

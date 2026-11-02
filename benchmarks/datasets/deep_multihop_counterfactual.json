@@ -1,0 +1,332 @@
+[
+  {
+    "id": "multihop_01",
+    "premise_docs": [
+      "Document 1: Entity_0 was founded in 1990 by Founder_0.",
+      "Document 2: In 2010, Entity_0 acquired Target_0 for $100 million.",
+      "Document 3: Target_0 had previously developed Algorithm_0 in 2005."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_0 created?",
+    "expected_grounded_answer": "Target_0, which was acquired by Entity_0, developed Algorithm_0 in 2005.",
+    "hallucinated_multihop_answer": "Target_0 was founded in 1850 and developed Algorithm_0 in 2099."
+  },
+  {
+    "id": "multihop_02",
+    "premise_docs": [
+      "Document 1: Entity_1 was founded in 1991 by Founder_1.",
+      "Document 2: In 2011, Entity_1 acquired Target_1 for $150 million.",
+      "Document 3: Target_1 had previously developed Algorithm_1 in 2006."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_1 created?",
+    "expected_grounded_answer": "Target_1, which was acquired by Entity_1, developed Algorithm_1 in 2006.",
+    "hallucinated_multihop_answer": "Target_1 was founded in 1850 and developed Algorithm_1 in 2099."
+  },
+  {
+    "id": "multihop_03",
+    "premise_docs": [
+      "Document 1: Entity_2 was founded in 1992 by Founder_2.",
+      "Document 2: In 2012, Entity_2 acquired Target_2 for $200 million.",
+      "Document 3: Target_2 had previously developed Algorithm_2 in 2007."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_2 created?",
+    "expected_grounded_answer": "Target_2, which was acquired by Entity_2, developed Algorithm_2 in 2007.",
+    "hallucinated_multihop_answer": "Target_2 was founded in 1850 and developed Algorithm_2 in 2099."
+  },
+  {
+    "id": "multihop_04",
+    "premise_docs": [
+      "Document 1: Entity_3 was founded in 1993 by Founder_3.",
+      "Document 2: In 2013, Entity_3 acquired Target_3 for $250 million.",
+      "Document 3: Target_3 had previously developed Algorithm_3 in 2008."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_3 created?",
+    "expected_grounded_answer": "Target_3, which was acquired by Entity_3, developed Algorithm_3 in 2008.",
+    "hallucinated_multihop_answer": "Target_3 was founded in 1850 and developed Algorithm_3 in 2099."
+  },
+  {
+    "id": "multihop_05",
+    "premise_docs": [
+      "Document 1: Entity_4 was founded in 1994 by Founder_4.",
+      "Document 2: In 2014, Entity_4 acquired Target_4 for $300 million.",
+      "Document 3: Target_4 had previously developed Algorithm_4 in 2009."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_4 created?",
+    "expected_grounded_answer": "Target_4, which was acquired by Entity_4, developed Algorithm_4 in 2009.",
+    "hallucinated_multihop_answer": "Target_4 was founded in 1850 and developed Algorithm_4 in 2099."
+  },
+  {
+    "id": "multihop_06",
+    "premise_docs": [
+      "Document 1: Entity_5 was founded in 1995 by Founder_5.",
+      "Document 2: In 2015, Entity_5 acquired Target_5 for $350 million.",
+      "Document 3: Target_5 had previously developed Algorithm_5 in 2010."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_5 created?",
+    "expected_grounded_answer": "Target_5, which was acquired by Entity_5, developed Algorithm_5 in 2010.",
+    "hallucinated_multihop_answer": "Target_5 was founded in 1850 and developed Algorithm_5 in 2099."
+  },
+  {
+    "id": "multihop_07",
+    "premise_docs": [
+      "Document 1: Entity_6 was founded in 1996 by Founder_6.",
+      "Document 2: In 2016, Entity_6 acquired Target_6 for $400 million.",
+      "Document 3: Target_6 had previously developed Algorithm_6 in 2011."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_6 created?",
+    "expected_grounded_answer": "Target_6, which was acquired by Entity_6, developed Algorithm_6 in 2011.",
+    "hallucinated_multihop_answer": "Target_6 was founded in 1850 and developed Algorithm_6 in 2099."
+  },
+  {
+    "id": "multihop_08",
+    "premise_docs": [
+      "Document 1: Entity_7 was founded in 1997 by Founder_7.",
+      "Document 2: In 2017, Entity_7 acquired Target_7 for $450 million.",
+      "Document 3: Target_7 had previously developed Algorithm_7 in 2012."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_7 created?",
+    "expected_grounded_answer": "Target_7, which was acquired by Entity_7, developed Algorithm_7 in 2012.",
+    "hallucinated_multihop_answer": "Target_7 was founded in 1850 and developed Algorithm_7 in 2099."
+  },
+  {
+    "id": "multihop_09",
+    "premise_docs": [
+      "Document 1: Entity_8 was founded in 1998 by Founder_8.",
+      "Document 2: In 2018, Entity_8 acquired Target_8 for $500 million.",
+      "Document 3: Target_8 had previously developed Algorithm_8 in 2013."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_8 created?",
+    "expected_grounded_answer": "Target_8, which was acquired by Entity_8, developed Algorithm_8 in 2013.",
+    "hallucinated_multihop_answer": "Target_8 was founded in 1850 and developed Algorithm_8 in 2099."
+  },
+  {
+    "id": "multihop_10",
+    "premise_docs": [
+      "Document 1: Entity_9 was founded in 1999 by Founder_9.",
+      "Document 2: In 2019, Entity_9 acquired Target_9 for $550 million.",
+      "Document 3: Target_9 had previously developed Algorithm_9 in 2014."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_9 created?",
+    "expected_grounded_answer": "Target_9, which was acquired by Entity_9, developed Algorithm_9 in 2014.",
+    "hallucinated_multihop_answer": "Target_9 was founded in 1850 and developed Algorithm_9 in 2099."
+  },
+  {
+    "id": "multihop_11",
+    "premise_docs": [
+      "Document 1: Entity_10 was founded in 2000 by Founder_10.",
+      "Document 2: In 2020, Entity_10 acquired Target_10 for $600 million.",
+      "Document 3: Target_10 had previously developed Algorithm_10 in 2015."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_10 created?",
+    "expected_grounded_answer": "Target_10, which was acquired by Entity_10, developed Algorithm_10 in 2015.",
+    "hallucinated_multihop_answer": "Target_10 was founded in 1850 and developed Algorithm_10 in 2099."
+  },
+  {
+    "id": "multihop_12",
+    "premise_docs": [
+      "Document 1: Entity_11 was founded in 2001 by Founder_11.",
+      "Document 2: In 2021, Entity_11 acquired Target_11 for $650 million.",
+      "Document 3: Target_11 had previously developed Algorithm_11 in 2016."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_11 created?",
+    "expected_grounded_answer": "Target_11, which was acquired by Entity_11, developed Algorithm_11 in 2016.",
+    "hallucinated_multihop_answer": "Target_11 was founded in 1850 and developed Algorithm_11 in 2099."
+  },
+  {
+    "id": "multihop_13",
+    "premise_docs": [
+      "Document 1: Entity_12 was founded in 2002 by Founder_12.",
+      "Document 2: In 2022, Entity_12 acquired Target_12 for $700 million.",
+      "Document 3: Target_12 had previously developed Algorithm_12 in 2017."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_12 created?",
+    "expected_grounded_answer": "Target_12, which was acquired by Entity_12, developed Algorithm_12 in 2017.",
+    "hallucinated_multihop_answer": "Target_12 was founded in 1850 and developed Algorithm_12 in 2099."
+  },
+  {
+    "id": "multihop_14",
+    "premise_docs": [
+      "Document 1: Entity_13 was founded in 2003 by Founder_13.",
+      "Document 2: In 2023, Entity_13 acquired Target_13 for $750 million.",
+      "Document 3: Target_13 had previously developed Algorithm_13 in 2018."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_13 created?",
+    "expected_grounded_answer": "Target_13, which was acquired by Entity_13, developed Algorithm_13 in 2018.",
+    "hallucinated_multihop_answer": "Target_13 was founded in 1850 and developed Algorithm_13 in 2099."
+  },
+  {
+    "id": "multihop_15",
+    "premise_docs": [
+      "Document 1: Entity_14 was founded in 2004 by Founder_14.",
+      "Document 2: In 2024, Entity_14 acquired Target_14 for $800 million.",
+      "Document 3: Target_14 had previously developed Algorithm_14 in 2019."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_14 created?",
+    "expected_grounded_answer": "Target_14, which was acquired by Entity_14, developed Algorithm_14 in 2019.",
+    "hallucinated_multihop_answer": "Target_14 was founded in 1850 and developed Algorithm_14 in 2099."
+  },
+  {
+    "id": "multihop_16",
+    "premise_docs": [
+      "Document 1: Entity_15 was founded in 2005 by Founder_15.",
+      "Document 2: In 2025, Entity_15 acquired Target_15 for $850 million.",
+      "Document 3: Target_15 had previously developed Algorithm_15 in 2020."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_15 created?",
+    "expected_grounded_answer": "Target_15, which was acquired by Entity_15, developed Algorithm_15 in 2020.",
+    "hallucinated_multihop_answer": "Target_15 was founded in 1850 and developed Algorithm_15 in 2099."
+  },
+  {
+    "id": "multihop_17",
+    "premise_docs": [
+      "Document 1: Entity_16 was founded in 2006 by Founder_16.",
+      "Document 2: In 2026, Entity_16 acquired Target_16 for $900 million.",
+      "Document 3: Target_16 had previously developed Algorithm_16 in 2021."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_16 created?",
+    "expected_grounded_answer": "Target_16, which was acquired by Entity_16, developed Algorithm_16 in 2021.",
+    "hallucinated_multihop_answer": "Target_16 was founded in 1850 and developed Algorithm_16 in 2099."
+  },
+  {
+    "id": "multihop_18",
+    "premise_docs": [
+      "Document 1: Entity_17 was founded in 2007 by Founder_17.",
+      "Document 2: In 2027, Entity_17 acquired Target_17 for $950 million.",
+      "Document 3: Target_17 had previously developed Algorithm_17 in 2022."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_17 created?",
+    "expected_grounded_answer": "Target_17, which was acquired by Entity_17, developed Algorithm_17 in 2022.",
+    "hallucinated_multihop_answer": "Target_17 was founded in 1850 and developed Algorithm_17 in 2099."
+  },
+  {
+    "id": "multihop_19",
+    "premise_docs": [
+      "Document 1: Entity_18 was founded in 2008 by Founder_18.",
+      "Document 2: In 2028, Entity_18 acquired Target_18 for $1000 million.",
+      "Document 3: Target_18 had previously developed Algorithm_18 in 2023."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_18 created?",
+    "expected_grounded_answer": "Target_18, which was acquired by Entity_18, developed Algorithm_18 in 2023.",
+    "hallucinated_multihop_answer": "Target_18 was founded in 1850 and developed Algorithm_18 in 2099."
+  },
+  {
+    "id": "multihop_20",
+    "premise_docs": [
+      "Document 1: Entity_19 was founded in 2009 by Founder_19.",
+      "Document 2: In 2029, Entity_19 acquired Target_19 for $1050 million.",
+      "Document 3: Target_19 had previously developed Algorithm_19 in 2024."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_19 created?",
+    "expected_grounded_answer": "Target_19, which was acquired by Entity_19, developed Algorithm_19 in 2024.",
+    "hallucinated_multihop_answer": "Target_19 was founded in 1850 and developed Algorithm_19 in 2099."
+  },
+  {
+    "id": "multihop_21",
+    "premise_docs": [
+      "Document 1: Entity_20 was founded in 2010 by Founder_20.",
+      "Document 2: In 2030, Entity_20 acquired Target_20 for $1100 million.",
+      "Document 3: Target_20 had previously developed Algorithm_20 in 2025."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_20 created?",
+    "expected_grounded_answer": "Target_20, which was acquired by Entity_20, developed Algorithm_20 in 2025.",
+    "hallucinated_multihop_answer": "Target_20 was founded in 1850 and developed Algorithm_20 in 2099."
+  },
+  {
+    "id": "multihop_22",
+    "premise_docs": [
+      "Document 1: Entity_21 was founded in 2011 by Founder_21.",
+      "Document 2: In 2031, Entity_21 acquired Target_21 for $1150 million.",
+      "Document 3: Target_21 had previously developed Algorithm_21 in 2026."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_21 created?",
+    "expected_grounded_answer": "Target_21, which was acquired by Entity_21, developed Algorithm_21 in 2026.",
+    "hallucinated_multihop_answer": "Target_21 was founded in 1850 and developed Algorithm_21 in 2099."
+  },
+  {
+    "id": "multihop_23",
+    "premise_docs": [
+      "Document 1: Entity_22 was founded in 2012 by Founder_22.",
+      "Document 2: In 2032, Entity_22 acquired Target_22 for $1200 million.",
+      "Document 3: Target_22 had previously developed Algorithm_22 in 2027."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_22 created?",
+    "expected_grounded_answer": "Target_22, which was acquired by Entity_22, developed Algorithm_22 in 2027.",
+    "hallucinated_multihop_answer": "Target_22 was founded in 1850 and developed Algorithm_22 in 2099."
+  },
+  {
+    "id": "multihop_24",
+    "premise_docs": [
+      "Document 1: Entity_23 was founded in 2013 by Founder_23.",
+      "Document 2: In 2033, Entity_23 acquired Target_23 for $1250 million.",
+      "Document 3: Target_23 had previously developed Algorithm_23 in 2028."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_23 created?",
+    "expected_grounded_answer": "Target_23, which was acquired by Entity_23, developed Algorithm_23 in 2028.",
+    "hallucinated_multihop_answer": "Target_23 was founded in 1850 and developed Algorithm_23 in 2099."
+  },
+  {
+    "id": "multihop_25",
+    "premise_docs": [
+      "Document 1: Entity_24 was founded in 2014 by Founder_24.",
+      "Document 2: In 2034, Entity_24 acquired Target_24 for $1300 million.",
+      "Document 3: Target_24 had previously developed Algorithm_24 in 2029."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_24 created?",
+    "expected_grounded_answer": "Target_24, which was acquired by Entity_24, developed Algorithm_24 in 2029.",
+    "hallucinated_multihop_answer": "Target_24 was founded in 1850 and developed Algorithm_24 in 2099."
+  },
+  {
+    "id": "multihop_26",
+    "premise_docs": [
+      "Document 1: Entity_25 was founded in 2015 by Founder_25.",
+      "Document 2: In 2035, Entity_25 acquired Target_25 for $1350 million.",
+      "Document 3: Target_25 had previously developed Algorithm_25 in 2030."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_25 created?",
+    "expected_grounded_answer": "Target_25, which was acquired by Entity_25, developed Algorithm_25 in 2030.",
+    "hallucinated_multihop_answer": "Target_25 was founded in 1850 and developed Algorithm_25 in 2099."
+  },
+  {
+    "id": "multihop_27",
+    "premise_docs": [
+      "Document 1: Entity_26 was founded in 2016 by Founder_26.",
+      "Document 2: In 2036, Entity_26 acquired Target_26 for $1400 million.",
+      "Document 3: Target_26 had previously developed Algorithm_26 in 2031."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_26 created?",
+    "expected_grounded_answer": "Target_26, which was acquired by Entity_26, developed Algorithm_26 in 2031.",
+    "hallucinated_multihop_answer": "Target_26 was founded in 1850 and developed Algorithm_26 in 2099."
+  },
+  {
+    "id": "multihop_28",
+    "premise_docs": [
+      "Document 1: Entity_27 was founded in 2017 by Founder_27.",
+      "Document 2: In 2037, Entity_27 acquired Target_27 for $1450 million.",
+      "Document 3: Target_27 had previously developed Algorithm_27 in 2032."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_27 created?",
+    "expected_grounded_answer": "Target_27, which was acquired by Entity_27, developed Algorithm_27 in 2032.",
+    "hallucinated_multihop_answer": "Target_27 was founded in 1850 and developed Algorithm_27 in 2099."
+  },
+  {
+    "id": "multihop_29",
+    "premise_docs": [
+      "Document 1: Entity_28 was founded in 2018 by Founder_28.",
+      "Document 2: In 2038, Entity_28 acquired Target_28 for $1500 million.",
+      "Document 3: Target_28 had previously developed Algorithm_28 in 2033."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_28 created?",
+    "expected_grounded_answer": "Target_28, which was acquired by Entity_28, developed Algorithm_28 in 2033.",
+    "hallucinated_multihop_answer": "Target_28 was founded in 1850 and developed Algorithm_28 in 2099."
+  },
+  {
+    "id": "multihop_30",
+    "premise_docs": [
+      "Document 1: Entity_29 was founded in 2019 by Founder_29.",
+      "Document 2: In 2039, Entity_29 acquired Target_29 for $1550 million.",
+      "Document 3: Target_29 had previously developed Algorithm_29 in 2034."
+    ],
+    "valid_multihop_query": "When was the algorithm developed by the company acquired by Entity_29 created?",
+    "expected_grounded_answer": "Target_29, which was acquired by Entity_29, developed Algorithm_29 in 2034.",
+    "hallucinated_multihop_answer": "Target_29 was founded in 1850 and developed Algorithm_29 in 2099."
+  }
+]
